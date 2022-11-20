@@ -1,2 +1,5 @@
+:octocat:
 # Node.js
-Personal Node.js Roadmap
+
+[Node.js Roadmap url](https://roadmap.sh/nodejs)
+[Node.js Roadmap pdf](Resources/nodejs.pdf)
