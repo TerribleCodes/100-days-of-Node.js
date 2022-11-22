@@ -5,6 +5,7 @@ Day|What I did
 ------------ | ------------- 
 Day 1 - 21/11/2022| JavaScript Basics I
 Day 2 - 22/11/2022| JavaScript Basics II
+Day 3 - 23/11/2022| NodeJS Introduction
 
 ___
 ## Resources
