@@ -36,7 +36,7 @@
 // }).listen(8080);
 
 // const http = require('http')
-const fs = require('fs')
+// const fs = require('fs')
 
 // http.createServer(function(req, res){
 //     fs.readFile('./logger.js', function(err, data){
@@ -45,8 +45,9 @@ const fs = require('fs')
 //     });
 // }).listen(8080);
 
-fs.appendFile('myfile2.html',"hello world",(err) =>{
-    if (err) throw err;
-    console.log('saved')
-    }
-)
+// fs.appendFile('myfile2.html',"hello world",(err) =>{
+//     if (err) throw err;
+//     console.log('saved')
+//     }
+// )
+
