@@ -51,3 +51,49 @@
 //     }
 // )
 
+// let obj1 = {};
+// obj1.first = "apple";
+// obj1.second = "banana";
+// obj1['third'] = "dragonfruit";
+
+// let tempObj = {
+//     'one':1,
+//     'two':2,
+//     'three':3
+// }
+
+// let myArray = ["Pumpkin","Lettuce","Tomatoes","Potatoes",tempObj]
+
+// let obj2 = {
+//     'value_1':myArray,
+//     'value_2':obj1
+// }
+
+
+
+// let myObject = {
+//     "fName":"This",
+//     "mid_name":"is",
+//     "lName":"Elon Musk"
+// };
+
+// console.log(myObject);
+
+// // To a string
+// let myObjectStringify = JSON.stringify(myObject);
+// console.log(myObjectStringify);
+
+// // Back to the object
+// let myObjectParse = JSON.parse(myObjectStringify);
+// console.log(myObjectParse);
+
+const opt = document.querySelector('#display')
+document.getElementById('viewData').addEventListener('click', () => {
+    const id = "1ez8kzut72b4bcx1md8Ysb1bDmK11hQGTE4Pdsikre8M";
+    const url = "https://spreadsheets.google.com/feeds/cells/2PACX-1vQobxB5kXEx7IXVMCQQaqpd0bIrrB-LBImoqhbZnjsYLKPPDM2Zw2oZoerPdyNgQMUH_V5rMabZAEMP/od6/public/basic?alt=json";
+    fetch(url).then((response) => {
+        return response.json();
+    }).then((data) => {
+        console.log(data.results);
+    })
+})
