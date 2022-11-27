@@ -9,7 +9,7 @@ Day 3 - 23/11/2022| NodeJS Introduction
 Day 4 - 24/11/2022| NodeJS Modules
 Day 5 - 25/11/2022| JSON I
 Day 6 - 26/11/2021| JSON II
-Day 7 - 27/11/2021| 
+Day 7 - 27/11/2021| Node Package Manager (npm)
 
 ___
 ## TDL
