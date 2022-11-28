@@ -8,12 +8,14 @@ Day 2 - 22/11/2022| JavaScript Basics II
 Day 3 - 23/11/2022| NodeJS Introduction
 Day 4 - 24/11/2022| NodeJS Modules
 Day 5 - 25/11/2022| JSON I
-Day 6 - 26/11/2021| JSON II
-Day 7 - 27/11/2021| Node Package Manager (npm)
+Day 6 - 26/11/2022| JSON II
+Day 7 - 27/11/2022| Node Package Manager (npm)
+Day 8 - 28/11/2022| RESTful API using Express.js
 
 ___
 ## TDL
 
+- VIDLY CRUD operations.
 - CSV to JSON.
 ___
 ## Resources
