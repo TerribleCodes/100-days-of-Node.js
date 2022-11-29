@@ -1,9 +1,52 @@
-const { response } = require('express');
+const startupDebugger = require('debug')('app:startup');
+const dbDebugger = require('debug')('app:db');
+const morgan = require('morgan');
+const helmet = require('helmet');
 const express = require('express');
 const Joi = require('joi');
 const app = express();
+const logger = require('./logger');
+const config = require('config');
+
+console.log(`Application name: ${config.get('name')}`);
+console.log(`Application name: ${config.get('mail.host')}`);
+
+// console.log(`Dev Environment: ${process.env.NODE_ENV}`);
+// console.log(`App environment: ${app.get('env')}`);
+if(app.get('env')=='development'){
+    app.use(morgan('tiny'));
+    // console.log("Morgan Enabled...");
+    startupDebugger("Morgan Enabled...");
+}
+// Database Debug
+dbDebugger("Connected to database");
+
+if(app.get('env')=='production'){
+    console.log("Production Environment");
+}
 
 app.use(express.json());
+app.use(logger);
+app.use(helmet());
+// app.use(morgan('tiny'));
+app.use(express.urlencoded({extended: true})); // Reads the encoded URL
+app.use(express.static('public')); //can serve static content (http://localhost:3000/readme.md)
+
+// Middleware function
+// app.use(function(req, res, next){
+//     console.log("Logging...");
+//     next();
+// });
+
+// app.use(function(req, res, next){
+//     console.log("Auth...");
+//     next();
+// });
+// Moved to logger.js
+
+
+
+
 
 var movie = [
     {"name":"The Hobbit", "genere":"Love it(1)"},

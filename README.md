@@ -11,11 +11,14 @@ Day 5 - 25/11/2022| JSON I
 Day 6 - 26/11/2022| JSON II
 Day 7 - 27/11/2022| Node Package Manager (npm)
 Day 8 - 28/11/2022| RESTful API using Express.js
+Day 9 - 29/11/2022| Express Advanced Topics I
+Day 10 - 30/11/2022| Express Advanced Topics II
 
 ___
 ## TDL
 
-- VIDLY CRUD operations.
+- Continue from `Environments`.
+- ~~VIDLY CRUD operations.~~
 - CSV to JSON.
 ___
 ## Resources
