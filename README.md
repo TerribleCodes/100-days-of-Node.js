@@ -17,9 +17,10 @@ Day 10 - 30/11/2022| Express Advanced Topics II
 ___
 ## TDL
 
-- Continue from `Environments`.
-- ~~VIDLY CRUD operations.~~
 - CSV to JSON.
+- ~~VIDLY CRUD operations.~~
+- ~~Continue from `Environments`.~~
+- `pug`
 ___
 ## Resources
 ><a href="https://roadmap.sh/nodejs" target="_blank">Node.js Roadmap url</a>  

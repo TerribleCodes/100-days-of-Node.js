@@ -29,57 +29,83 @@ app.use(function(req, res, next){
  - `app.use(express.urlencoded());` Reads the encoded URL
  > Here use the unicoded format post in postman and send the key-value pair. This pair will be decoded. 
  
-
- ## Environment (dev or prod)
+ ## Environment (development or production)
 
 - To set an env variable in command line,
 `set variable_name=value`
 > Depending on the environment that you are working on, features can be enabled/ disabled as follows.
 
+- Returns the Environment variable of the current workstation.
+- If no environment is enabled, by default it will return `development`. You can choose any approach (app.get('env') - Personal Preference)
 ```javascript
-console.log(`Dev Environment: ${process.env.NODE_ENV}`);
-console.log(`App environment: ${app.get('env')}`);
+console.log(`Your env variable is (from process module): ${process.env.NODE_ENV}`) // Method 1
+console.log(`Your env variable is (from express module): ${app.get('env')}`) // Method 2
+
+if (app.get('env') === 'development'){
+    app.use(morgan('tiny'));
+    console.log("Morgan Enabled...");
+}
 ```
 
-```javascript
-if(app.get('env')=='development'){
-    app.use(morgan('tiny'));
-    console.log("Morgan Enabled");
-}
+- Set the environment variables by `set NODE_ENV=production`
 
-if(app.get('env')=='production'){
-    console.log("Production Environment");
-}
+## Configurations
+
+- Depending on the env (development, production, default) you can use different config files.
+- Create a `config` directory to store the `configuration.json` files.
+- `default.json`: Defines the default settings for the project.
+- `development.json`: Overrides the default settings. These settings will be used in the development environment.
+- `productoin.json` : Overridest the default settings. These settings will be used in the production environment.
+
+__Depending on the development environment, configuration details we get below may vary__
+```javascript
+const config = require('config');
+console.log(`Application name: ${config.get('name')}`);
+console.log(`Application name: ${config.get('mail.host')}`);
+```
+
+- Store the Passwords in environment.
+- Store the password in an Environment Variable `set app_password=1234`
+> Try in local terminal with admin privileges to deal with the environment variables rather than using the vscode builtin terminal.
+- In `custom-environment-variable.json` we map the passwords.
+- Will read from environment variables not config files.
+```javascript
+console.log(`Mail Password: ${config.get('mail.password')}`)
 ```
 
 ## Debugging
 
-- `debugger` can be used instead of using `console.log` everywhere.
+- `debug package` can be used instead of using `console.log` everywhere.
 
 ```javascript
-const startupDebugger = require('debug')('app:startuo');
-const dbDebugger = require('debug')('app:db');
+const stDB = require('debug')('app:startup'); // Startup related 
+const dbDB = require('debug')('app:db'); // Databese releted
+```
 
-// set DEBUG environment variable as app:startup
-// or DEBUG=app:*
-// Run the applicaiton 
-if(app.get('env')=='development'){
+> set DEBUG environment variable as app:startup
+
+```javascript
+if (app.get('env') === 'production'){
     app.use(morgan('tiny'));
-    // console.log("Morgan Enabled...");
-    startupDebugger("Morgan Enabled...");
+    stDB('Morgan Enabled...');
 }
-// Database Debug
-dbDebugger("Connected to database");
+// set DEBUG=app:db
+dbDB('Database Enabled');
 ```
+> All the debugging for the app namespace --> `set DEBUG=app:*` then `nodemon`.
 
-## Configurations
+#### Rather than writing console.log everytime,  
+`const cl = require('debug')('app:startup')`  
+`cl("Hello)`
 
-- Depending on the env (dev, prod) you can use different config files. (config>JSON files)
-- Those can be accessed as follows.
+> From the console _DEBUG=app:startup nodemon index.js_
 
-```javascript
-const config = require('config');
+## Templating Engines
 
-console.log(`Application name: ${config.get('name')}`);
-console.log(`Application name: ${config.get('mail.host')}`);
-```
+- Using `pug` to generate a dynamic HTML.
+
+
+## Maintainable Routes
+
+- Move all the routing codes to a different file. (Ex: `/movies/genere/` to `genere.js`)
+
