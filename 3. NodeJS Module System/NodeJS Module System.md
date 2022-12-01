@@ -54,6 +54,13 @@ exports.attributeName = name;
 console.log(module)
 ```
 
+> To export multiple module contents  
+
+```javascript
+module.exports = {method1, method2, method3}
+```
+
+
 ## File System Module
 
 ```javascript
