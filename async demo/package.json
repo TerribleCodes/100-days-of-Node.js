@@ -1,5 +1,5 @@
 {
-  "name": "vidly-crud",
+  "name": "async-demo",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,12 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "config": "^3.3.8",
-    "debug": "^4.3.4",
-    "express": "^4.18.2",
-    "helmet": "^6.0.1",
-    "joi": "^17.7.0",
-    "morgan": "^1.10.0",
-    "pug": "^3.0.2"
+    "debug": "^4.3.4"
   }
 }

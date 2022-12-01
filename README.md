@@ -13,6 +13,7 @@ Day 7 - 27/11/2022| Node Package Manager (npm)
 Day 8 - 28/11/2022| RESTful API using Express.js
 Day 9 - 29/11/2022| Express Advanced Topics I
 Day 10 - 30/11/2022| Express Advanced Topics II
+Day 11 - 1/12/2022| Recap
 
 ___
 ## TDL
@@ -20,7 +21,7 @@ ___
 - CSV to JSON.
 - ~~VIDLY CRUD operations.~~
 - ~~Continue from `Environments`.~~
-- `pug`
+- ~~`pug`~~
 ___
 ## Resources
 ><a href="https://roadmap.sh/nodejs" target="_blank">Node.js Roadmap url</a>  

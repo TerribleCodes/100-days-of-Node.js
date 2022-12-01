@@ -29,10 +29,6 @@ router.get('/:name', (req, res) => {
     const movie_valid = movie.find(c => c.name === req.params.name);
     if(!movie_valid) return res.status(404).send('Record is not Available');
     res.send(movie_valid);
-    // res.render('index.pug', {
-        // title: "test",
-        // message: "test 1"
-    // })
 });
 
 // PUT Operatoin

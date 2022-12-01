@@ -4,8 +4,8 @@ const app = express(); // Express
 const logger = require('./middleware/logger'); // Custom middleware
 
 // Template Engines
-// app.set('view engine', 'pug');
-// app.set('views', './views');
+app.set('view engine', 'pug');
+app.set('views', './views');
 
 // Import routes
 const generes = require('./routes/genere');

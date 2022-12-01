@@ -1,5 +1,7 @@
+const opt = require('debug')('app:startup')
+
 function login(req, res, next){
-    console.log("Logging...");
+    opt("Initializing...");
     next();
 }
 

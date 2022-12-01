@@ -103,9 +103,12 @@ dbDB('Database Enabled');
 ## Templating Engines
 
 - Using `pug` to generate a dynamic HTML.
+- Refer [index.pug](../VIDLY%20CRUD/views/index.pug) and [home view](../VIDLY%20CRUD/middleware/home.js).
 
 
 ## Maintainable Routes
 
 - Move all the routing codes to a different file. (Ex: `/movies/genere/` to `genere.js`)
+- Import `const routes = express.Routes()` then instead of `app.get/post/delete/put` use `routes.get/post/delete/put`. Then `module.exports = routes`.
+
 
