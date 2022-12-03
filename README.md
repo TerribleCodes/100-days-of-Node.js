@@ -14,6 +14,8 @@ Day 8 - 28/11/2022| RESTful API using Express.js
 Day 9 - 29/11/2022| Express Advanced Topics I
 Day 10 - 30/11/2022| Express Advanced Topics II
 Day 11 - 1/12/2022| Recap
+Day 12 - 2/12/2022| Async Functions I
+Day 13 - 3/12/2022| Async Functions II
 
 ___
 ## TDL
