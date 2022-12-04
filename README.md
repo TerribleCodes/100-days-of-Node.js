@@ -16,6 +16,7 @@ Day 10 - 30/11/2022| Express Advanced Topics II
 Day 11 - 1/12/2022| Recap
 Day 12 - 2/12/2022| Async Functions I
 Day 13 - 3/12/2022| Async Functions II
+Day 14 - 4/12.2022| NodeJS Documentation (Misc)
 
 ___
 ## TDL
@@ -24,6 +25,7 @@ ___
 - ~~VIDLY CRUD operations.~~
 - ~~Continue from `Environments`.~~
 - ~~`pug`~~
+- `n days of ${something}`
 ___
 ## Resources
 ><a href="https://roadmap.sh/nodejs" target="_blank">Node.js Roadmap url</a>  
