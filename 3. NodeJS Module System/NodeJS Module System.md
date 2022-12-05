@@ -1,4 +1,31 @@
-# Imporing a module
+- - - - - - - - - -
+### Basically there are 2 types of NodeJS modules
+1. Commons JS
+2. ESM
+
+Refer [this Image](./commonjs-vs-esm.png)
+
+- - - - - - - - - -
+
+Before Node execute a function it, wraps the module code into a `module wrapper function` which is an anonymous function.
+
+
+> The module code may look like this...
+```javascript
+    const error = "syntax error"
+    // Module code
+```
+
+> after wrapping (which happens before execution) function looke like this...
+```javascript
+    (function(exports, require, module, __filename, __dirname){
+        // Module code
+    });
+```
+
+- - - - - - - - - -
+
+# Importing a module
 
 > Global methods
 - `log()`
