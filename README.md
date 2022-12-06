@@ -18,6 +18,7 @@ Day 12 - 2/12/2022| Async Functions I
 Day 13 - 3/12/2022| Async Functions II
 Day 14 - 4/12.2022| NodeJS Documentation (Misc)
 Day 15 - 5/12/2022| MongoDB I
+Day 16 - 6/12/2022| MongoDB II
 
 ___
 ## TDL
@@ -27,6 +28,8 @@ ___
 - ~~Continue from `Environments`.~~
 - ~~`pug`~~
 - `n days of ${something}`
+- MongoDB CLI!?
+- More CRUD operations using `mongoose`
 ___
 ## Resources
 ><a href="https://roadmap.sh/nodejs" target="_blank">Node.js Roadmap url</a>  
