@@ -13,12 +13,13 @@ Day 7 - 27/11/2022| Node Package Manager (npm)
 Day 8 - 28/11/2022| RESTful API using Express.js
 Day 9 - 29/11/2022| Express Advanced Topics I
 Day 10 - 30/11/2022| Express Advanced Topics II
-Day 11 - 1/12/2022| Recap
-Day 12 - 2/12/2022| Async Functions I
-Day 13 - 3/12/2022| Async Functions II
-Day 14 - 4/12.2022| NodeJS Documentation (Misc)
-Day 15 - 5/12/2022| MongoDB I
-Day 16 - 6/12/2022| MongoDB II
+Day 11 - 01/12/2022| Recap
+Day 12 - 02/12/2022| Async Functions I
+Day 13 - 03/12/2022| Async Functions II
+Day 14 - 04/12.2022| NodeJS Documentation (Misc)
+Day 15 - 05/12/2022| MongoDB I
+Day 16 - 06/12/2022| MongoDB II
+Day 17 - 07/12/2022 | MongoDB CRUD operations
 
 ___
 ## TDL
@@ -29,7 +30,7 @@ ___
 - ~~`pug`~~
 - `n days of ${something}`
 - MongoDB CLI!?
-- More CRUD operations using `mongoose`
+- ~~More CRUD operations using `mongoose`~~
 ___
 ## Resources
 ><a href="https://roadmap.sh/nodejs" target="_blank">Node.js Roadmap url</a>  
