@@ -19,7 +19,8 @@ Day 13 - 03/12/2022| Async Functions II
 Day 14 - 04/12.2022| NodeJS Documentation (Misc)
 Day 15 - 05/12/2022| MongoDB I
 Day 16 - 06/12/2022| MongoDB II
-Day 17 - 07/12/2022 | MongoDB CRUD operations
+Day 17 - 07/12/2022| MongoDB CRUD operations I
+Day 18 - 08/12/2022| MongoDB CRUD operations II
 
 ___
 ## TDL
