@@ -1,35 +1,45 @@
 const express = require('express')
+const mongoose = require('mongoose');
 const router = express.Router();
 
-var movie = [
-    {"name":"The Hobbit", "genere":"Love it(1)"},
-    {"name":"Sixty Shades", "genere":"uh...I can explain"},
-    {"name":"LOTR", "genere":"Love it(2)"},
-    {"name":"Spider Man", "genere":"aunt May"},
-    {"name":"The Bois", "genere":"les goo"},
-    {"name":"After", "genere":"meh..."},
-    {"name":"Bleach", "genere":"yes"},
-];
-
-// CRUD Operations
-
-// POST Operation
-router.post('/', (req, res) => {
-    const movie_json = {
-        name: req.body.name,
-        genere: req.body.genere
+const genereSchema = new mongoose.Schema({
+    name:{
+        type: String,
+        // required: true,
+        // minlength: 5,
+        // maxlength: 50
     }
-    movie.push(movie_json);
-    res.send(movie);
+});
+const genereModel = mongoose.model('generes', genereSchema);
+
+router.get('/', async (req, res) => {
+    const result = await genereModel.find().sort('name');
+    res.send(result);
 })
 
-// GET Operatoin
 router.get('/:name', (req, res) => {
-    // Check whether the movie name is available
-    const movie_valid = movie.find(c => c.name === req.params.name);
-    if(!movie_valid) return res.status(404).send('Record is not Available');
-    res.send(movie_valid);
+    genereModel.findOne({
+        _id: req.body.name
+    })
+    .exec((err, result) => {
+        if (err) return console.log('Error occured...', err)
+        console.log(result)
+        res.send(result)
+    })
 });
+
+
+router.post('/', (req, res) => {
+    const newModel = new genereModel();
+    newModel.name = req.body.name;
+
+    newModel.save((err, result) => {
+        if (err) return console.log('Error occured...', err);
+        res.send(result);
+    })
+})
+
+
 
 // PUT Operatoin
 router.put('/', (req, res) => {
@@ -63,13 +73,11 @@ router.delete('/', (req, res) => {
 })
 
 // Reuse input validation function
-
-function req_validation(body){
-    const schema = Joi.object({
-        name: Joi.string().min(3).required(),
-        genere: Joi.string().min(3).required()
-    })
-    return schema.validate(body)
-}
+// function req_validation(body){
+//     const schema = Joi.object({
+//         name: Joi.string().min(3).required(),
+//     })
+//     return schema.validate(body)
+// }
 
 module.exports = router;

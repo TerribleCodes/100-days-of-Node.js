@@ -21,6 +21,7 @@ Day 15 - 05/12/2022| MongoDB I
 Day 16 - 06/12/2022| MongoDB II
 Day 17 - 07/12/2022| MongoDB CRUD operations I
 Day 18 - 08/12/2022| MongoDB CRUD operations II
+Day 19 - 09/12/2022| Mongoose Data Validation
 
 ___
 ## TDL
@@ -32,6 +33,7 @@ ___
 - `n days of ${something}`
 - MongoDB CLI!?
 - ~~More CRUD operations using `mongoose`~~
+- `mongoose` built in data validators didn't work.
 ___
 ## Resources
 ><a href="https://roadmap.sh/nodejs" target="_blank">Node.js Roadmap url</a>  

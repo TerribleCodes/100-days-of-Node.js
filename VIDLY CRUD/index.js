@@ -1,27 +1,14 @@
-const opt = require('debug')('app:startup'); // console.log alternative 
-const express = require('express'); // Express import
-const app = express(); // Express
-const logger = require('./middleware/logger'); // Custom middleware
+const mongoose = require('mongoose');
+const genres = require('./routes/genere');
+const express = require('express');
+const app = express();
 
-// Template Engines
-app.set('view engine', 'pug');
-app.set('views', './views');
+mongoose.connect('mongodb://localhost:27017/vidly')
+  .then(() => console.log('Connected to MongoDB...'))
+  .catch(err => console.error('Could not connect to MongoDB...', err));
 
-// Import routes
-const generes = require('./routes/genere');
-app.use('/movies/generes/', generes);
-
-// Import home page
-const home = require('./middleware/home');
-app.use('/',home);
-
-// Middlewares in the pipeline
 app.use(express.json());
-app.use(logger);
+app.use('/api/genres', genres);
 
-// Reads the `http://localhost:3000/readme.md`
-app.use(express.static('public'));
-
-// Connection
 const port = process.env.PORT || 3000;
-app.listen(port, () => opt(`Listening to port ${port}`));
+app.listen(port, () => console.log(`Listening on port ${port}...`));

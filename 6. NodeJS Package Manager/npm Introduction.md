@@ -33,7 +33,7 @@
     }
 ```
 - Example: `"mongoose": "^4.5.7"`  
-- `major version number` :  A new feature that effects teh whole application. 5.0.0  
+- `major version number` :  A new feature that effects the whole application. 5.0.0  
 - `minor version number` :  New features that doesn't effect the existing API. If there's no bug, `patch version number` will be 0. 4.6.0  
 - `patch version number` :  Small bug fixes. 4.5.8  
 - `^` or `~` character indicates that the package needs to be changed or not depending on the major and the minor versions. Ex: `"4.5.x"`  
