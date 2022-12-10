@@ -22,6 +22,7 @@ Day 16 - 06/12/2022| MongoDB II
 Day 17 - 07/12/2022| MongoDB CRUD operations I
 Day 18 - 08/12/2022| MongoDB CRUD operations II
 Day 19 - 09/12/2022| Mongoose Data Validation
+Day 20 - 10/12/2022| Recap
 
 ___
 ## TDL
