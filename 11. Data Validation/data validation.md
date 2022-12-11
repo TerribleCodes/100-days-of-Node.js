@@ -31,6 +31,7 @@ catch(e){
     isPublished: { type: Boolean, required: true},
     price: { 
         type: Number, 
+        // Here an arrow function cannot be used. Reason: Arrow functions doesn't have `this` reference.
         required: function () {
             // If this.published is true, Price will be aquired. Else not required.
             return this.isPublished;
