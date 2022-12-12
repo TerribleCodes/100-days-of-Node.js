@@ -2,12 +2,11 @@ const express = require('express');
 const router = express.Router();
 const bodyParser = require('body-parser');
 const Joi = require('joi');
-const genereModel = require('../models/genere')
+const customerModel = require('../models/customer')
 router.use(bodyParser.urlencoded({extended:true}));
 
-
 router.get('/all', async (req, res) => {
-    res.send(await genereModel.find().sort('name'));
+    res.send(await customerModel.find().sort('name'));
 });
 
 router.post('/save', async (req, res) => {
@@ -16,15 +15,15 @@ router.post('/save', async (req, res) => {
         res.send(error.message)
     }
     else{
-        const newGenere = new genereModel({name: req.body.name, genere :req.body.genere});
-        newGenere.save((err,result) => { if (err) return res.send('Error occured when saving data...'); res.send(result); })
+        const newCustomer = new customerModel({isGold: req.body.isGold, name :req.body.name, phone: req.body.number});
+        newCustomer.save((err,result) => { if (err) return res.send('Error occured when saving data...'); res.send(result); })
     }
 });
 
 router.put('/update/:id', async (req, res) => {
-    const available = await genereModel.findById(req.params.id);
+    const available = await customerModel.findById(req.params.id);
     if (available) {
-        genereModel.findByIdAndUpdate(
+        customerModel.findByIdAndUpdate(
             { _id: req.params.id },
             { $set: { name:req.body.newName } },
             { upsert: true },
@@ -40,9 +39,9 @@ router.put('/update/:id', async (req, res) => {
 });
 
 router.delete('/delete/:id', async (req, res) => {
-    const available = await genereModel.findById(req.params.id);
+    const available = await customerModel.findById(req.params.id);
     if (available) {
-        genereModel.findByIdAndDelete(
+        customerModel.findByIdAndDelete(
             { _id: req.params.id },
             (err, result) => {
                 if (err) return console.log('Error occured...', err);
@@ -58,10 +57,10 @@ router.delete('/delete/:id', async (req, res) => {
 
 function req_validation(body){
     const schema = Joi.object({
+        isGold: Joi.boolean().required(),
         name: Joi.string().min(3).required(),
-        genere: Joi.string().min(3).required()
+        phone: Joi.number().min(10).required()
     })
     return schema.validate(body);
 }
-
 module.exports = router;
