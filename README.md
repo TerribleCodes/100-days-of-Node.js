@@ -25,8 +25,10 @@ Day 19 - 09/12/2022| Mongoose Data Validation I
 Day 20 - 10/12/2022| Mongoose Data Validation II
 Day 21 - 11/12/2022| Recap
 Day 22 - 12/12/2022| Restructuring NodeJS demo
-Day 23 - 13/12/2022| Modeling Relationships (mongoose)
-Day 24 - 14/12/2022| Recap
+Day 23 - 13/12/2022| Modeling Relationships (mongoose) I
+Day 24 - 14/12/2022| Modeling Relationships (mongoose) II
+Day 25 - 15/12/2022| Recap
+Day 26 - 16/12/2022| Authentication and Authorization I
 
 ___
 ## TDL
