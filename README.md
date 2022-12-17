@@ -29,6 +29,7 @@ Day 23 - 13/12/2022| Modeling Relationships (mongoose) I
 Day 24 - 14/12/2022| Modeling Relationships (mongoose) II
 Day 25 - 15/12/2022| Recap
 Day 26 - 16/12/2022| Authentication and Authorization I
+Day 27 - 17/12/2022| Authentication and Authorization II
 
 ___
 ## TDL

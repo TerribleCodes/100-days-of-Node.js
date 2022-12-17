@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const customers = require('./routes/customor')
+const customers = require('./routes/customor');
 const genres = require('./routes/genere');
 const express = require('express');
 const app = express();

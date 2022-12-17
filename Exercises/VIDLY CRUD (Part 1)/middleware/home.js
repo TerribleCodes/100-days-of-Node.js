@@ -5,8 +5,8 @@ const router = express.Router();
 router.get('/',(req,res) => {
     // res.send("This is the root folder");
     res.render('index.pug', {
-        title: "test",
-        message: "test 1"
+        title: "Blank Page",
+        message: "No content available here..."
     })
 });
 

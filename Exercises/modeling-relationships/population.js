@@ -50,13 +50,16 @@ async function createCourse(name, author) {
 async function listCourses() { 
   const courses = await Course
     .find()
-    .select('name');
+    .populate('author', 'name -_id')
+    .select('name author');
   console.log(courses);
 }
 
-createAuthor('Mosh', 'My bio', 'My Website');
+
+// Inserting the author data to the database
+// createAuthor('Mosh', 'My bio', 'My Website');
 
 // A course will be created related to the ID of the above created author
-// createCourse('Node Course', 'authorId')
+// createCourse('Node Course', '639caa59218043f6434de9de');
 
 // listCourses();

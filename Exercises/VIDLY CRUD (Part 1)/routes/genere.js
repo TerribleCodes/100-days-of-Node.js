@@ -2,9 +2,8 @@ const express = require('express');
 const router = express.Router();
 const bodyParser = require('body-parser');
 const Joi = require('joi');
-const genereModel = require('../models/genere')
+const { genereModel } = require('../models/genere')
 router.use(bodyParser.urlencoded({extended:true}));
-
 
 router.get('/all', async (req, res) => {
     res.send(await genereModel.find().sort('name'));
