@@ -1,13 +1,14 @@
 const {Genre, validate} = require('../models/genre');
-const mongoose = require('mongoose');
 const express = require('express');
 const router = express.Router();
 
+// Works - 18 Dec 2022
 router.get('/', async (req, res) => {
   const genres = await Genre.find().sort('name');
   res.send(genres);
 });
 
+// Works - 18 Dec 2022
 router.post('/', async (req, res) => {
   const { error } = validate(req.body); 
   if (error) return res.status(400).send(error.details[0].message);
@@ -18,6 +19,7 @@ router.post('/', async (req, res) => {
   res.send(genre);
 });
 
+// Works - 18 Dec 2022
 router.put('/:id', async (req, res) => {
   const { error } = validate(req.body); 
   if (error) return res.status(400).send(error.details[0].message);
@@ -31,6 +33,7 @@ router.put('/:id', async (req, res) => {
   res.send(genre);
 });
 
+// Works - 18 Dec 2022
 router.delete('/:id', async (req, res) => {
   const genre = await Genre.findByIdAndRemove(req.params.id);
 
@@ -39,6 +42,7 @@ router.delete('/:id', async (req, res) => {
   res.send(genre);
 });
 
+// Works - 18 Dec 2022
 router.get('/:id', async (req, res) => {
   const genre = await Genre.findById(req.params.id);
 

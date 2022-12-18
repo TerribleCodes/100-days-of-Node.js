@@ -1,12 +1,14 @@
-const {Rental, validate} = require('../models/rental'); 
+const { validate, rentalSchema} = require('../models/rentals'); 
 const {Movie} = require('../models/movie'); 
 const {Customer} = require('../models/customer'); 
 const mongoose = require('mongoose');
 const express = require('express');
 const router = express.Router();
+const fawn = require('fawn');
+fawn.init(mongoose);
 
 router.get('/', async (req, res) => {
-  const rentals = await Rental.find().sort('-dateOut');
+  const rentals = await rentalSchema.find().sort('-dateOut');
   res.send(rentals);
 });
 
@@ -14,7 +16,7 @@ router.post('/', async (req, res) => {
   const { error } = validate(req.body); 
   if (error) return res.status(400).send(error.details[0].message);
 
-  const customer = await Customer.findById(req.body.customerId);
+  const customer = await Customer.findById(req.body.CustomerId);
   if (!customer) return res.status(400).send('Invalid customer.');
 
   const movie = await Movie.findById(req.body.movieId);
@@ -22,7 +24,7 @@ router.post('/', async (req, res) => {
 
   if (movie.numberInStock === 0) return res.status(400).send('Movie not in stock.');
 
-  let rental = new Rental({ 
+  let rental = new rentalSchema({ 
     customer: {
       _id: customer._id,
       name: customer.name, 
@@ -34,16 +36,23 @@ router.post('/', async (req, res) => {
       dailyRentalRate: movie.dailyRentalRate
     }
   });
-  rental = await rental.save();
-
-  movie.numberInStock--;
-  movie.save();
-  
+  try{
+    new fawn.Task()
+      // .save(collection_name, document_name)
+      .save('rentals', rental)
+      .update('movies', {_id: movie._id}, {
+        $inc: {numberInStock: -1}
+      })
+      .run();
   res.send(rental);
+  }
+  catch(err){
+    res.status(500).send('Internal Server Error');
+  }
 });
 
 router.get('/:id', async (req, res) => {
-  const rental = await Rental.findById(req.params.id);
+  const rental = await rentalSchema.findById(req.params.id);
 
   if (!rental) return res.status(404).send('The rental with the given ID was not found.');
 
@@ -51,3 +60,5 @@ router.get('/:id', async (req, res) => {
 });
 
 module.exports = router; 
+
+// Somehow it works lol 
