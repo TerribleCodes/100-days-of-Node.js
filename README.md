@@ -16,7 +16,7 @@ Day 10 - 30/11/2022| Express Advanced Topics II
 Day 11 - 01/12/2022| Recap
 Day 12 - 02/12/2022| Async Functions I
 Day 13 - 03/12/2022| Async Functions II
-Day 14 - 04/12.2022| NodeJS Documentation (Misc)
+Day 14 - 04/12/2022| NodeJS Documentation (Misc)
 Day 15 - 05/12/2022| MongoDB I
 Day 16 - 06/12/2022| MongoDB II
 Day 17 - 07/12/2022| MongoDB CRUD operations I
@@ -30,18 +30,19 @@ Day 24 - 14/12/2022| Modeling Relationships (mongoose) II
 Day 25 - 15/12/2022| Recap
 Day 26 - 16/12/2022| Authentication and Authorization I
 Day 27 - 17/12/2022| Authentication and Authorization II
-
+Day 28 - 18/12/2022| CRUD Operations
+Day 29 - 19/12/2022} Testing Authentication and Authorization I
 ___
 ## TDL
 
 - CSV to JSON.
-- ~~VIDLY CRUD operations.~~
-- ~~Continue from `Environments`.~~
+- ~~ VIDLY CRUD operations. ~~
+- ~~ Continue from `Environments`. ~~
 - ~~`pug`~~
 - `n days of ${something}`
 - MongoDB CLI!?
-- ~~More CRUD operations using `mongoose`~~
-- ~~`mongoose` built in data validators.~~
+- ~~ More CRUD operations using `mongoose` ~~
+- ~~`mongoose` built in data validators. ~~
 ___
 ## Resources
 ><a href="https://roadmap.sh/nodejs" target="_blank">Node.js Roadmap url</a>  
