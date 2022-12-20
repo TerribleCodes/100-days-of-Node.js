@@ -32,6 +32,7 @@ Day 26 - 16/12/2022| Authentication and Authorization I
 Day 27 - 17/12/2022| Authentication and Authorization II
 Day 28 - 18/12/2022| CRUD Operations
 Day 29 - 19/12/2022} Testing Authentication and Authorization I
+Day 30 - 20/12/2022| Testing Authentication and Authorization I
 ___
 ## TDL
 
