@@ -1,17 +1,41 @@
+const asyncMiddleware = require('../middleware/async');
 const adminAuth = require('../middleware/admin')
 const auth = require('../middleware/auth')
 const {Genre, validate} = require('../models/genre');
 const express = require('express');
+const winston = require('winston');
 const router = express.Router();
 
-// Works - 18 Dec 2022
-router.get('/', async (req, res) => {
-  const genres = await Genre.find().sort('name');
-  res.send(genres);
+winston.handleExceptions(
+  new winston.transports.File({filename: 'exception.log'})
+);
+process.on('unhandledRejection', (ex) => {
+  throw ex;
 });
 
+// process.on('uncaughtException', (ex) => {
+  // console.log("Uncaught Exception...");
+//   winston.error(ex.message, ex);
+//   process.exit(1);
+// });
+
+// process.on('unhandledRejection', (ex) => {
+  // console.log("Unhandled Rejection...");
+//   winston.error(ex.message, ex);
+//   process.exit(1);
+// });
+
 // Works - 18 Dec 2022
-router.post('/', auth, async (req, res) => {
+router.get('/', asyncMiddleware (async (req, res) => {
+  const genre = await Genre.find().sort('name');
+  res.send(genre);
+  throw new Error('Could not get the Genre');
+}));
+
+throw new Error ('something failed during startup');
+
+// Works - 18 Dec 2022
+router.post('/', auth, asyncMiddleware( async (req, res) => {
   const { error } = validate(req.body); 
   if (error) return res.status(400).send(error.details[0].message);
 
@@ -19,7 +43,8 @@ router.post('/', auth, async (req, res) => {
   genre = await genre.save();
   
   res.send(genre);
-});
+}
+));
 
 // Works - 18 Dec 2022
 router.put('/:id', async (req, res) => {

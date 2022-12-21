@@ -84,3 +84,7 @@ res.send(token); // This token can be decoded and obtain the _id
 
 ## Setting Response Headers
 
+```javascript
+    const token = user.generateAuthToken();
+    res.header('x-auth-token', token).send(_.pick(user, ['_id', 'name', 'email']));
+```
