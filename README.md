@@ -34,17 +34,14 @@ Day 28 - 18/12/2022| CRUD Operations
 Day 29 - 19/12/2022| Testing Authentication and Authorization I
 Day 30 - 20/12/2022| Testing Authentication and Authorization II
 Day 31 - 21/12/2022| Handling Errors I
+Day 32 - 22/12/2022| Handling Errors II
 ___
 ## TDL
 
 - CSV to JSON.
-- ~~ VIDLY CRUD operations. ~~
-- ~~ Continue from `Environments`. ~~
-- ~~`pug`~~
-- `n days of ${something}`
-- MongoDB CLI!?
-- ~~ More CRUD operations using `mongoose` ~~
-- ~~`mongoose` built in data validators. ~~
+- MongoDB CLI.
+- `100 Days of Productivity`
+
 ___
 ## Resources
 ><a href="https://roadmap.sh/nodejs" target="_blank">Node.js Roadmap url</a>  

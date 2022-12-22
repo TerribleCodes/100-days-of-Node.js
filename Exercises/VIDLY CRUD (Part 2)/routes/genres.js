@@ -32,7 +32,6 @@ router.get('/', asyncMiddleware (async (req, res) => {
   throw new Error('Could not get the Genre');
 }));
 
-throw new Error ('something failed during startup');
 
 // Works - 18 Dec 2022
 router.post('/', auth, asyncMiddleware( async (req, res) => {
