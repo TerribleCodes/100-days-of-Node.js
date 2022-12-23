@@ -42,6 +42,7 @@ ___
 - CSV to JSON.
 - MongoDB CLI.
 - `100 Days of Productivity`
+- Unit Testing and Integration Testing in NodeJS
 
 ___
 ## Resources
