@@ -22,6 +22,7 @@
 * To run the test, Goto `pacage.json`, under `devDependencies` edit the `scripts` --> `test` to "jest".
 * To run the test `npm test`
 * The number of tests for a function is roughly equals to the number of executions it has.
+* To keep `jest` watching goto `package.json` scripts chage `"test": "jest --watchAll"`
 
 ## Unit test sample
 
@@ -33,3 +34,4 @@ test('First Test', () => {
 ```
 * Run the test.
 * Refer [Testing Demo](../Exercises/testing-demo/)
+* Tests must be Generel. Not too specific.
