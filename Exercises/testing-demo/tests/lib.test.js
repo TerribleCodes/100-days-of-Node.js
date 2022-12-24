@@ -1,3 +1,5 @@
+const mail = require('../mail');
+const db = require('../db');
 const { fizzBuzz } = require('../exercise1');
 const lib = require('../lib');
 
@@ -90,3 +92,35 @@ describe('fizzBuzz', () => {
 })
 
 // Mock Functions
+describe('applyDiscount', () => {
+    it('should provide 10% discount if the customer has more than 10 points', () => {
+        db.getCustomerSync = function(customerId){
+            console.log("Reading a sample customer id...");
+            return {id: customerId, points: 20};
+        }
+        const order = {customerId: 1, totalPrice: 10};
+        lib.applyDiscount(order);
+        expect(order.totalPrice).toBe(9);
+    })
+})
+
+describe('notifyCustomer', () => {
+    it('should send an email to the customer', () => {
+        // db.getCustomerSync = function(customerId){
+        //     return {email: 'a'};
+        // }
+        // let mailSent = false;
+        // mail.send = function(email, message){
+        //     mailSent = true;
+        // }
+        // lib.notifyCustomer({customerId: 1});
+        // expect(mailSent).toBe(true);
+
+        db.getCustomerSync = jest.fn().mockReturnValue({email: 'a'});
+        mail.send = jest.fn();
+
+        lib.notifyCustomer({customerId: 1});
+
+        expect(mail.send).toHaveBeenCalled();
+    })
+})
