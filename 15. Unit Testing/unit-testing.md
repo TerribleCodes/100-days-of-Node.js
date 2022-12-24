@@ -35,6 +35,3 @@ test('First Test', () => {
 * Run the test.
 * Refer [Testing Demo](../Exercises/testing-demo/)
 * Tests must be Generel. Not too specific.
-
-## Jest Mock functions
-
