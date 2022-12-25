@@ -1,5 +1,5 @@
 - - - - - - - - - -
-### Basically there are 2 types of NodeJS modules
+### Basically there are 2 types of NodeJS module systems
 1. Commons JS
 2. ESM
 

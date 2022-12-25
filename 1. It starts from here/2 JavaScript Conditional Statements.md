@@ -1,6 +1,8 @@
 # Conditional Statements
 
-A basic decision making method.
+- A basic decision making method.
+
+## If-Else statements
 
 ```javascript
 var age = window.prompt("Enter your age");
@@ -22,7 +24,7 @@ else{
 }
 ```
 
-# Switch Statements
+## Switch Statements
 
 ```javascript
 var grade = window.prompt("Enter your grade")
@@ -44,7 +46,7 @@ switch (grade){
 }
 ```
 
-# Logical Operators
+## Logical Operators
 
 `&&` - And  
 `||` - Or  
@@ -64,7 +66,7 @@ else if (temp<0 || temp>100){
 }
 ```
 
-# A small verification logic
+## A small verification logic
 ```javascript
 var myName = window.prompt("Enetr a name")
 
