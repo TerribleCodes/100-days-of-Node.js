@@ -1,5 +1,6 @@
 - - - - - - - - - -
 ### Basically there are 2 types of NodeJS module systems
+
 1. Commons JS
 2. ESM
 
@@ -9,14 +10,8 @@ Refer [this Image](./commonjs-vs-esm.png)
 
 Before Node execute a function it, wraps the module code into a `module wrapper function` which is an anonymous function.
 
+- After wrapping the code, (which happens before execution) wrapper function looke like this...
 
-> The module code may look like this...
-```javascript
-    const error = "syntax error"
-    // Module code
-```
-
-> after wrapping (which happens before execution) function looke like this...
 ```javascript
     (function(exports, require, module, __filename, __dirname){
         // Module code
@@ -27,12 +22,12 @@ Before Node execute a function it, wraps the module code into a `module wrapper 
 
 # Importing a module
 
-> Global methods
-- `log()`
-- `setTimeout()`
-- `clearTimeout()`
-- `setInterval()`
-- `clearInterval()`
+*  Global methods
+    * `log()`
+    * `setTimeout()`
+    *  `clearTimeout()`
+    *  `setInterval()`
+    *  `clearInterval()`
 
 <hr>
 
@@ -58,11 +53,9 @@ names.forEach((value) => {
 ## Creating your own module
 
 ```javascript
-// Import the required module content (locally available)
-const logger = require('./logger.js')
+const logger = require('./logger.js') // Import the required module content (locally available)
 
-// console.log(logger.url)
-logger.log("This URL");
+logger.log("This URL"); // console.log(logger.url)
 ```
 
 ```javascript
@@ -73,20 +66,19 @@ function log(message){
     console.log(message,url)
 }
 
-// Exports the module content
-exports.functionName = log;
-exports.attributeName = name;
 
-// Can view the module contents. Ex: `log` Export.
-console.log(module)
+exports.functionName = log; // Exports the module content
+exports.attributeName = name; // Exports the module content
+
+/*module.exports = {url, name, log};*/ // Exporting can be done in this way as well
+console.log(module) // Can view the module contents. Ex: `log` Export.
 ```
 
-> To export multiple module contents  
+* To export multiple module contents  
 
 ```javascript
 module.exports = {method1, method2, method3}
 ```
-
 
 ## File System Module
 
@@ -127,14 +119,11 @@ console.log(`Total Memory: ${totalMem}`)
 ## Event Module
 
 ```javascript
-// Import the Logger Class
-const Logger = require('./logger');
+const Logger = require('./logger'); // Import the Logger Class
 
-// Create an object
-const logger = new Logger();
+const logger = new Logger(); // Create an object
 
-// Register Emmiter
-logger.on('activete_emitter', (arg) => {
+logger.on('activete_emitter', (arg) => { // Register Emmiter
     console.log('Listner Called', arg)
 });
 
@@ -142,8 +131,7 @@ logger.log('Hello World')
 ```
 
 ```javascript
-// Module Class
-const EventEmitter = require('events');
+const EventEmitter = require('events'); // Module Class
 
 class Logger extends EventEmitter{
     log(message){
@@ -174,8 +162,7 @@ const server = http.createServer((request, response) =>{
     }
 );
 
-// Starts Listening
-server.listen(3000);
+server.listen(3000); // Starts Listening
 console.log("Listening in port 3000");
 ```
 

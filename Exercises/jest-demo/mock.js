@@ -1,11 +1,12 @@
-const axios = require('axios');
+const db = require('../testing-demo/db');
 
-const fetchData = async (id) => {
-    // axios.get(`https://jsonplaceholder.typicode.com/todos/${id}`)
-    //     .then((res) => res.data)
-    //     .catch(err => console.log(err));
-    const result = await axios.get(`https://jsonplaceholder.typicode.com/todos/${id}`);
-    return (result.data);
-}
+module.exports.applyDiscount = function(order) { 
+    const customer = db.getCustomerSync(order.customerId); //getting the customer data using the order details
+    if (customer.points > 10) 
+        order.totalPrice *= 0.9; 
+    }
 
-module.exports = fetchData;
+module.exports.notifyCustomer = function(order) { 
+    const customer = db.getCustomerSync(order.customerId);
+    mail.send(customer.email, 'Your order was placed successfully.');
+    }

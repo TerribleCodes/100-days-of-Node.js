@@ -38,18 +38,33 @@ Day 32 - 22/12/2022| Handling Errors II
 Day 33 - 23/12/2022| Unit Testing I
 Day 34 - 24/12/2022| Unit Testing II
 Day 35 - 25/12/2022| Jest
+Day 36 - 26/12/2022| Recap
+
 ___
 ## TDL
 
 - CSV to JSON.
 - MongoDB CLI.
 - `100 Days of Productivity`
-- Unit Testing and Integration Testing in NodeJS
+- Jest Mock Functions.
+- Unit and Integration Testing (Important!)
+- Include the credits when adding an external resource that belongs to someone.
 
 ___
-## Resources
-><a href="https://roadmap.sh/nodejs" target="_blank">Node.js Roadmap url</a>  
-><a href="Resources/NodeJS Roadmap.pdf" target="_blank">Node.js Roadmap pdf</a>  
-><a href="Resources/NodeJS Interview Questions.pdf" target="_blank">Node.js Interview Questions</a>  
-><a href="Resources/VSCode Keyboard Shortcuts Windows.pdf" target="_blank">VS Code Shortcuts - Windows</a>  
-><a href="https://10fastfingers.com/widget/typingtest?dur=600&rand=1&words=|1|2|3|4|5|6|7|8|9|0|abstract|break|char|debugger|double|export|finally|goto|in|let|null|public|super|throw|try|volatile|arguments|byte|class|default|else|extends|float|implements|instanceof|long|package|return|switch|throws|typeof|while|await|case|const|delete|enum|false|for|if|int|native|private|short|sync|async|transient|var|with|boolean|catch|continue|do|eval|final|function|import|interface|new|protected|static|this|true|void|yeild|;|.|%27|%22|,|(|)|{|}|[|]|=%27|$|*|:" target="_blank">10 Fast Fingers</a>
+## References
+
+1. [Complete Node.js course - Mosh]()  
+2. [JavaScript Basics - BroCode]()  
+3. [JSON Tutorial]()  
+4. [Jest Tutorial]()  
+5. [OOP Concepts]()
+
+___
+## Additional Resources
+
+* [Node.js Roadmap](https://roadmap.sh/nodejs)
+* [Node.js Interview Questions](./Resources/Node.js%20Interview%20Questions.pdf) ([Credits]())
+* [MongoDB Cheat Sheet](./Resources/MongoDB%20Cheat%20Sheet.pdf) ([Credits]())
+* [VS Code Shortcuts - Windows](./Resources/VSCode%20Keyboard%20Shortcuts%20Windows.pdf)
+* [10 Fast Fingers ](https://10fastfingers.com/widget/typingtest?dur=600&rand=1&words=|1|2|3|4|5|6|7|8|9|0|abstract|break|char|debugger|double|export|finally|goto|in|let|null|public|super|throw|try|volatile|arguments|byte|class|default|else|extends|float|implements|instanceof|long|package|return|switch|throws|typeof|while|await|case|const|delete|enum|false|for|if|int|native|private|short|sync|async|transient|var|with|boolean|catch|continue|do|eval|final|function|import|interface|new|protected|static|this|true|void|yeild|;|.|%27|%22|,|(|)|{|}|[|]|=%27|$|*|:)
+ 

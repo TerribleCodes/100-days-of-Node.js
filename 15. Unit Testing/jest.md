@@ -79,4 +79,5 @@ describe('animals array', () => {
 
 * Allows user to avoid testing certain parts of the code. 
 * For an example, if an API is down for maintainance the test code fails because it's trying to fetch data. To avoid such failures we use mock functions.
+* Refer to [Mock Tests File](../Exercises/jest-demo/tests/mocks.test.js).
 

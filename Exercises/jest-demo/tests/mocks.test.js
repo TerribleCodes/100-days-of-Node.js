@@ -1,16 +1,14 @@
-const fetchData = require('../mock');
-const axios = require('axios');
+const mock = require('../mock');
+const db = require('../../testing-demo/db')
 
-jest.mock(axios, () => ({
-    __esModule: true,
-    default: {
-        get: jest.fn().mockResolvedValue({ result: {id: 1}})
-    }
-}))
 
-describe('Read information from a random API', () => {
-    it('Should return the data', async () => {
-        const result = await fetchData(1);
-        expect(result.id).toBe(1);
-    });
-});
+describe('apply discount', () => {
+    it('Should apply 10% discount if the customer has more than 10 points', () => {
+        db.getCustomerSync = function(customerId){
+            return {id: customerId, points: 20}
+        }
+        const customer_data = {customerId: 1, totalPrice: 10};
+        mock.applyDiscount(customer_data);
+        expect(customer_data.totalPrice).toBe(9);
+    })
+})

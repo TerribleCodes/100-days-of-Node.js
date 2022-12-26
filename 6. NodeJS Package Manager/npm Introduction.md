@@ -1,6 +1,6 @@
 # npm Introduction
 
-- Use `www.npmjs.com`.
+- `www.npmjs.com`.
 - Whenever starting a new Node project create a package.json by`npm init`.
 - `npm init --yes` can be used to initialize with the default values.
 - When we import a package via `npm install <package_name>` package.json update its dependencies with the modules imported.
