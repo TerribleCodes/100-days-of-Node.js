@@ -38,7 +38,8 @@ Day 32 - 22/12/2022| Handling Errors II
 Day 33 - 23/12/2022| Unit Testing I
 Day 34 - 24/12/2022| Unit Testing II
 Day 35 - 25/12/2022| Jest
-Day 36 - 26/12/2022| Recap
+Day 36 - 26/12/2022| Recap I
+Day 37 - 27/12/2022| Recap II
 
 ___
 ## TDL
