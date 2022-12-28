@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for vidly/routes/rentals.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../index.html">All files</a> / <a href="index.html">vidly/routes</a> rentals.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">35.29% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>12/34</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/10</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/3</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">41.38% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>12/29</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64</td><td class="line-coverage quiet"><span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span></td><td class="text"><pre class="prettyprint lang-js">const {Rental, validate} = require('../models/rental'); 
+const {Movie} = require('../models/movie'); 
+const {Customer} = require('../models/customer'); 
+const mongoose = require('mongoose');
+const Fawn = require('fawn');
+const express = require('express');
+const router = express.Router();
+&nbsp;
+Fawn.init(mongoose);
+&nbsp;
+router.get('/', <span class="fstat-no" title="function not covered" >as</span>ync (req, res) =&gt; {
+  const rentals = <span class="cstat-no" title="statement not covered" >await Rental.find().sort('-dateOut');</span>
+<span class="cstat-no" title="statement not covered" >  res.send(rentals);</span>
+});
+&nbsp;
+router.post('/', <span class="fstat-no" title="function not covered" >as</span>ync (req, res) =&gt; {
+  const { error } = <span class="cstat-no" title="statement not covered" >validate(req.body); </span>
+<span class="cstat-no" title="statement not covered" >  if (error) <span class="cstat-no" title="statement not covered" >return res.status(400).send(error.details[0].message);</span></span>
+&nbsp;
+  const customer = <span class="cstat-no" title="statement not covered" >await Customer.findById(req.body.customerId);</span>
+<span class="cstat-no" title="statement not covered" >  if (!customer) <span class="cstat-no" title="statement not covered" >return res.status(400).send('Invalid customer.');</span></span>
+&nbsp;
+  const movie = <span class="cstat-no" title="statement not covered" >await Movie.findById(req.body.movieId);</span>
+<span class="cstat-no" title="statement not covered" >  if (!movie) <span class="cstat-no" title="statement not covered" >return res.status(400).send('Invalid movie.');</span></span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  if (movie.numberInStock === 0) <span class="cstat-no" title="statement not covered" >return res.status(400).send('Movie not in stock.');</span></span>
+&nbsp;
+  let rental = <span class="cstat-no" title="statement not covered" >new Rental({ </span>
+    customer: {
+      _id: customer._id,
+      name: customer.name, 
+      phone: customer.phone
+    },
+    movie: {
+      _id: movie._id,
+      title: movie.title,
+      dailyRentalRate: movie.dailyRentalRate
+    }
+  });
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  try {</span>
+<span class="cstat-no" title="statement not covered" >    new Fawn.Task()</span>
+      .save('rentals', rental)
+      .update('movies', { _id: movie._id }, { 
+        $inc: { numberInStock: -1 }
+      })
+      .run();
+  
+<span class="cstat-no" title="statement not covered" >    res.send(rental);</span>
+  }
+  catch(ex) {
+<span class="cstat-no" title="statement not covered" >    res.status(500).send('Something failed.');</span>
+  }
+});
+&nbsp;
+router.get('/:id', <span class="fstat-no" title="function not covered" >as</span>ync (req, res) =&gt; {
+  const rental = <span class="cstat-no" title="statement not covered" >await Rental.findById(req.params.id);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  if (!rental) <span class="cstat-no" title="statement not covered" >return res.status(404).send('The rental with the given ID was not found.');</span></span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  res.send(rental);</span>
+});
+&nbsp;
+module.exports = router; </pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Wed Feb 14 2018 12:02:04 GMT-0800 (PST)
+</div>
+</div>
+<script src="../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../sorter.js"></script>
+</body>
+</html>

@@ -25,9 +25,9 @@ Before Node execute a function it, wraps the module code into a `module wrapper 
 *  Global methods
     * `log()`
     * `setTimeout()`
-    *  `clearTimeout()`
-    *  `setInterval()`
-    *  `clearInterval()`
+    * `clearTimeout()`
+    * `setInterval()`
+    * `clearInterval()`
 
 <hr>
 

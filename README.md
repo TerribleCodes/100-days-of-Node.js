@@ -38,8 +38,9 @@ Day 32 - 22/12/2022| Handling Errors II
 Day 33 - 23/12/2022| Unit Testing I
 Day 34 - 24/12/2022| Unit Testing II
 Day 35 - 25/12/2022| Jest
-Day 36 - 26/12/2022| Recap I
-Day 37 - 27/12/2022| Recap II
+Day 36 - 26/12/2022| Recap I (JavaScript Theory)
+Day 37 - 27/12/2022| Recap II (JavaScript Theory)
+Day 38 - 28/12/2022| Integration Testing I
 
 ___
 ## TDL
@@ -57,8 +58,10 @@ ___
 1. [Complete Node.js course - Mosh]()  
 2. [JavaScript Basics - BroCode]()  
 3. [JSON Tutorial]()  
-4. [Jest Tutorial]()  
-5. [OOP Concepts]()
+4. [Jest Unit Testing Tutorial]()  
+5. [Mock Functions]()
+6. [Integration Testing]()
+7. [OOP Concepts]()
 
 ___
 ## Additional Resources
