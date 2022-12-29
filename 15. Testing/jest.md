@@ -2,6 +2,25 @@
 
 * `jest` is a javascript framework for testings.
 * Refer [unit-testing](unit-testing.md) for more information.
+* There are many frameworks out there for Testing
+    * Jasmine
+    * Mocha with Chai and Sinon
+    * Jest
+* The ES6 isn't natively supported by `jest`. Therefor Node.js import system will be used.
+
+# Automated Testing
+
+- Automated testing is the process of writing `test code` to test the `production code`.
+- This can be used to catch bugs before deploying and can refactor the code with confidence.
+* There are 3 types of testings
+    * Unit Testing
+    * Integration Testing
+    * End to End Testing
+- In `Unit Testing`, Classes and functionalities will be tested witout considering the external dependencies.
+- In `Integration Testing`, the production code wll be tested with external dependencies.
+- In `End to End testing`, all the UI and others will be tested. Ex: Selenium
+* For the UI tests, use the `puppeteer` package.
+
 * Basic structure of a jest test module:
 
 ```javascript
@@ -79,5 +98,29 @@ describe('animals array', () => {
 
 * Allows user to avoid testing certain parts of the code. 
 * For an example, if an API is down for maintainance the test code fails because it's trying to fetch data. To avoid such failures we use mock functions.
-* Refer to [Mock Tests File](../Exercises/jest-demo/tests/mocks.test.js).
+* To use a mock, simply create a directory named `__mocks__`. And inside the main directory, place a copy of the module that's going to tested (Ex: where we call the API).
+* On the top of the `file.test.js` call `jest.mock('./original_file)`.
+* When the test is running, jest will call the mock file instead of calling the original file.
+  
+Example:  
+  
+```javascript
+const fetchData = () => { // Mock Function
+  return Promise.resolve({
+    title: 'delectus aut autem';
+  })
+};
+exports.fetchData = fetchData;
+```
 
+```javascript
+const axios = require('axios');
+const fetchData = () => { // Original function where API call happens
+  return axios
+    .get('https://jsonplaceholder.typicode.com/todos/1')
+    .then(response => {
+      return "APPLE" /*response.data*/;
+    });
+};
+exports.fetchData = fetchData;
+```

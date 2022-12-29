@@ -1,4 +1,8 @@
-# Setting up the environment
+# Introduction
+
+* It's the process of testing the application with dependencies.
+
+## Setting up the environment when working with Databases
 
 * In the `default.json` add a new value `db` and set it to the default value.
 
@@ -16,7 +20,7 @@
     }
 ```
 
-* Before running the tests, set the environment to "test".
+* Before running the tests, set the environment to "test" -> `NODE_ENV=test`
 
 * For the Integration testing we use a package called `supertest`.  
 > npm install supertest --save-dev  
@@ -24,9 +28,9 @@
 Example: 
 ```javascript
 describe('GET/', () => {
-        it('returns all genre', async () => {
-            await Genre.collection.insertMany([
-                {name: 'genre1'},
+    it('returns all genre', async () => {
+        await Genre.collection.insertMany([
+            {name: 'genre1'},
                 {name2: 'genre2'}
             ]);
             const res = await request(server).get('/api/genres');
@@ -36,7 +40,7 @@ describe('GET/', () => {
     });
 ```
 
-## Code Coverage
+## Code Coverage (Visualize)
 
 * To visualize the code coverage, in the `package.json` tests, add `--coverage` flag.
 
@@ -47,3 +51,6 @@ describe('GET/', () => {
 ```
 
 * Run the test (`npm test`), you'll get the code coverage.
+* A directory called `coverage` will be created for more information.
+
+## KS

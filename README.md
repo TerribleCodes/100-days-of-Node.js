@@ -41,6 +41,7 @@ Day 35 - 25/12/2022| Jest
 Day 36 - 26/12/2022| Recap I (JavaScript Theory)
 Day 37 - 27/12/2022| Recap II (JavaScript Theory)
 Day 38 - 28/12/2022| Integration Testing I
+Day 39 - 29/12/2022| Integration Testing II
 
 ___
 ## TDL
