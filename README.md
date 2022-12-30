@@ -42,6 +42,7 @@ Day 36 - 26/12/2022| Recap I (JavaScript Theory)
 Day 37 - 27/12/2022| Recap II (JavaScript Theory)
 Day 38 - 28/12/2022| Integration Testing I
 Day 39 - 29/12/2022| Integration Testing II
+Day 40 - 30/12/2022| Recap (Unit and Integration Testing)
 
 ___
 ## TDL
@@ -71,5 +72,5 @@ ___
 * [Node.js Interview Questions](./Resources/Node.js%20Interview%20Questions.pdf) ([Credits]())
 * [MongoDB Cheat Sheet](./Resources/MongoDB%20Cheat%20Sheet.pdf) ([Credits]())
 * [VS Code Shortcuts - Windows](./Resources/VSCode%20Keyboard%20Shortcuts%20Windows.pdf)
-* [10 Fast Fingers ](https://10fastfingers.com/widget/typingtest?dur=600&rand=1&words=|1|2|3|4|5|6|7|8|9|0|abstract|break|char|debugger|double|export|finally|goto|in|let|null|public|super|throw|try|volatile|arguments|byte|class|default|else|extends|float|implements|instanceof|long|package|return|switch|throws|typeof|while|await|case|const|delete|enum|false|for|if|int|native|private|short|sync|async|transient|var|with|boolean|catch|continue|do|eval|final|function|import|interface|new|protected|static|this|true|void|yeild|;|.|%27|%22|,|(|)|{|}|[|]|=%27|$|*|:)
+* [10 Fast Fingers ](https://10fastfingers.com/widget/typingtest?dur=600&rand=1&words=1|2|3|4|5|6|7|8|9|0|abstract|break|char|debugger|double|export|finally|goto|in|let|null|public|super|throw|try|volatile|arguments|byte|class|default|else|extends|float|implements|instanceof|long|package|return|switch|throws|typeof|while|await|case|const|delete|enum|false|for|if|int|native|private|short|sync|async|transient|var|with|boolean|catch|continue|do|eval|final|function|import|interface|new|protected|static|this|true|void|yeild|%3E|%27|%3C|%22|!|*|(|+|_|-|:|;)
  

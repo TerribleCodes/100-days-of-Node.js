@@ -27,6 +27,9 @@
 
 Example: 
 ```javascript
+const express = require('express');
+const request = require('supertest');
+
 describe('GET/', () => {
     it('returns all genre', async () => {
         await Genre.collection.insertMany([
@@ -52,5 +55,3 @@ describe('GET/', () => {
 
 * Run the test (`npm test`), you'll get the code coverage.
 * A directory called `coverage` will be created for more information.
-
-## KS

@@ -105,7 +105,8 @@ describe('animals array', () => {
 Example:  
   
 ```javascript
-const fetchData = () => { // Mock Function
+jest.mock('./fetchData.js');
+const fetchData = () => { // Mock Function inside the __mocks__
   return Promise.resolve({
     title: 'delectus aut autem';
   })
