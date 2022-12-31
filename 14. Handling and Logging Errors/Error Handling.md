@@ -41,7 +41,7 @@ router.get('/', asyncMiddleware (async (req, res) => {
 
 ## Instead of Using middlewares...
 
->npm install express-async-errors  
+> npm install express-async-errors  
 - Place `require('express-async-errors')` in index.js and use the original route handlers.
 - If there's any error the express-async-errors will take care of it.
 

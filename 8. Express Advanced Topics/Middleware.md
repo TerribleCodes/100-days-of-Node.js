@@ -58,6 +58,7 @@ if (app.get('env') === 'development'){
 - `productoin.json` : Overridest the default settings. These settings will be used in the production environment.
 
 __Depending on the development environment, configuration details we get below may vary__
+
 ```javascript
 const config = require('config');
 console.log(`Application name: ${config.get('name')}`);
@@ -95,20 +96,17 @@ dbDB('Database Enabled');
 > All the debugging for the app namespace --> `set DEBUG=app:*` then `nodemon`.
 
 #### Rather than writing console.log everytime,  
-`const cl = require('debug')('app:startup')`  
-`cl("Hello)`
 
-> From the console _DEBUG=app:startup nodemon index.js_
+```javascript
+const printf = require('debug')('console_log');  // Set DEBUG=console_log
+printf('Hello World');
+``` 
 
 ## Templating Engines
 
 - Using `pug` to generate a dynamic HTML.
-- Refer [index.pug](../VIDLY%20CRUD/views/index.pug) and [home view](../VIDLY%20CRUD/middleware/home.js).
-
 
 ## Maintainable Routes
 
 - Move all the routing codes to a different file. (Ex: `/movies/genere/` to `genere.js`)
 - Import `const routes = express.Routes()` then instead of `app.get/post/delete/put` use `routes.get/post/delete/put`. Then `module.exports = routes`.
-
-

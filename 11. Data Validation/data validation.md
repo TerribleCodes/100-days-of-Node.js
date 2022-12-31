@@ -54,6 +54,7 @@ example:
 ```
 
 - For an array, instead of defining `myArray: [ Array ]`
+
 ```javascript
     tags: {
         type: Array,
@@ -65,6 +66,7 @@ example:
 ```
 
 - To use an Async validator
+
 ```javascript
 tags: {
     type: Array,
@@ -79,10 +81,10 @@ tags: {
     },
     message: 'course must contain at least one tag'
     }
-    
 ```
 
 - To obtain a list of errors
+
 ```javascript
 // Data input code
 catch(error){
@@ -108,5 +110,4 @@ catch(error){
         get (value) => Math.round(value); // When fetching the price from the database, the value we get wiil be rounded off
         set (value) => Math.round(value); // When updating the values to the database, the value will be rounded off
     }
-
 ```

@@ -1,9 +1,10 @@
 # npm Introduction
 
 - `www.npmjs.com`.
-- Whenever starting a new Node project create a package.json by`npm init`.
+- Whenever starting a new Node project create a package.json by `npm init`.
 - `npm init --yes` can be used to initialize with the default values.
-- When we import a package via `npm install <package_name>` package.json update its dependencies with the modules imported.
+- When we import a package via `npm install <package_name>`, package.json update its dependencies with the modules imported.
+- To install the missing dependencies in `node_modules/`, simply run the command `npm install`.
 
 <hr>
 
@@ -71,6 +72,10 @@
 - `npm install -g npm`  
 - `npm -g outdated` -> lists out the outdated global packages  
 - `npm uninstall -g {{package_name}}` -> Uninstalls a relevent global package.  
+
+## Updating packages
+
+- `npm update`
 
 ## Publishing your package to npm registery
 

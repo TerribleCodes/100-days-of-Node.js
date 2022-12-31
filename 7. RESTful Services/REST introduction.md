@@ -37,8 +37,7 @@ const port = process.env.PORT || 3000;
 app.listen(3000, () => console.log(`Listening to port ${port}`));
 ```
 
-> Error: nodemon : "File C:\Users\MADAWA\AppData\Roaming\npm\nodemon.ps1 cannot be loaded because running scripts is disabled on this system. For more information, see       
-about_Execution_Policies at https:/go.microsoft.com/fwlink/?LinkID=135170."  
+> Error: nodemon : "File C:\Users\MADAWA\AppData\Roaming\npm\nodemon.ps1 cannot be loaded because running scripts is disabled on this system. For more information, see [about_Execution_Policies](https:/go.microsoft.com/fwlink/?LinkID=135170).   
 Solution: Run PowerShell as an admin.  
 `C:\WINDOWS\system32> Set-ExecutionPolicy RemoteSigned -Scope CurrentUser`  
 

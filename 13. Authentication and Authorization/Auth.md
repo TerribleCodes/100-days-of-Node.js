@@ -1,6 +1,6 @@
 # Introduction
 
-- Authentication: Whether the allowed user is legitimate.
+- Authentication: Whether the allowed user is legitimate. Ex: Validating the emain and the password
 - Authorization: Whether the user has the right privileges.
 - `Register` and `Login` are usually a post requests.
 - In the registration section most of the time Username, Password, Email will be collected from the user.
@@ -21,6 +21,7 @@
     await user.save();
     res.send(_.pick(user, ['_id', 'name', 'email']));
 ```
+
 ## Hashing Passwords
 
 - Use  `bcrypt`.

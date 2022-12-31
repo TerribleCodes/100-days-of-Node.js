@@ -75,7 +75,7 @@ function getCommit(commitID, callback_function3){
 > Solution for the callback hell
 
 ```javascript
-getUser(1000, viewUser); // Simple asf :D
+getUser(1000, viewUser); // Simple :D
 
 opt('3rd Line');
 
@@ -182,7 +182,7 @@ function getUser(userID){
 ```
 
 > A thread will handle one request. `await` releases the thread as soon as the process is over. 
-> Refer [Exercise](../async%20demo/Exercise-ans.js).
+
 
 
 

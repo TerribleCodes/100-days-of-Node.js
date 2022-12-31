@@ -8,7 +8,9 @@ Refer [this Image](./commonjs-vs-esm.png)
 
 - - - - - - - - - -
 
-Before Node execute a function it, wraps the module code into a `module wrapper function` which is an anonymous function.
+- Every file in node is considered as a module.
+
+- Before Node execute a function it, wraps the module code into a `module wrapper function` which is an anonymous function.
 
 - After wrapping the code, (which happens before execution) wrapper function looke like this...
 
@@ -53,25 +55,23 @@ names.forEach((value) => {
 ## Creating your own module
 
 ```javascript
-const logger = require('./logger.js') // Import the required module content (locally available)
-
-logger.log("This URL"); // console.log(logger.url)
-```
-
-```javascript
 var url = 'http://mylogger.io/log';
 var name = "Nothing Here";
 
 function log(message){
     console.log(message,url)
 }
-
-
 exports.functionName = log; // Exports the module content
 exports.attributeName = name; // Exports the module content
 
 /*module.exports = {url, name, log};*/ // Exporting can be done in this way as well
 console.log(module) // Can view the module contents. Ex: `log` Export.
+```
+
+```javascript
+const logger = require('./logger.js') // Import the required module content (locally available)
+
+logger.log("This URL"); // console.log(logger.url)
 ```
 
 * To export multiple module contents  

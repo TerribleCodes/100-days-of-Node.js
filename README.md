@@ -43,7 +43,7 @@ Day 37 - 27/12/2022| Recap II (JavaScript Theory)
 Day 38 - 28/12/2022| Integration Testing I
 Day 39 - 29/12/2022| Integration Testing II
 Day 40 - 30/12/2022| Recap (Unit and Integration Testing)
-
+Day 41 - 31/12/2022| Handling Errors III
 ___
 ## TDL
 
@@ -57,20 +57,20 @@ ___
 ___
 ## References
 
-1. [Complete Node.js course - Mosh]()  
-2. [JavaScript Basics - BroCode]()  
-3. [JSON Tutorial]()  
-4. [Jest Unit Testing Tutorial]()  
-5. [Mock Functions]()
-6. [Integration Testing]()
-7. [OOP Concepts]()
+1. [JavaScript Basics - BroCode](https://www.youtube.com/watch?v=8dWL3wF_OMw)  
+2. [JSON Tutorial](https://www.youtube.com/watch?v=IWcUJLUAO2A)  
+3. [JavaScript OOP Concepts](https://www.youtube.com/watch?v=GEuS0tfLfEY)
+4. [Complete Node.js course - Mosh](https://codewithmosh.com/p/the-complete-node-js-course)  
+5. [Unit Testing Tutorial](https://www.youtube.com/watch?v=ajiAl5UNzBU)  
+6. [Integration Testing Tutorial](https://www.youtube.com/watch?v=IPX0OswHoxg)
+7. [Rest API with JWT Access & Refresh Tokens](https://www.youtube.com/watch?v=b9WlsQMGWMQ)
+8. [Error Handling in NodeJS](https://www.youtube.com/watch?v=mGPj-pCGS2c)
+9. [dotENV](https://www.youtube.com/watch?v=zDup0I2VGmk)
 
 ___
 ## Additional Resources
 
 * [Node.js Roadmap](https://roadmap.sh/nodejs)
-* [Node.js Interview Questions](./Resources/Node.js%20Interview%20Questions.pdf) ([Credits]())
+* [Node.js Interview Questions](./Resources/NodeJS%20Interview%20Questions.pdf) ([Credits]())
 * [MongoDB Cheat Sheet](./Resources/MongoDB%20Cheat%20Sheet.pdf) ([Credits]())
 * [VS Code Shortcuts - Windows](./Resources/VSCode%20Keyboard%20Shortcuts%20Windows.pdf)
-* [10 Fast Fingers ](https://10fastfingers.com/widget/typingtest?dur=600&rand=1&words=1|2|3|4|5|6|7|8|9|0|abstract|break|char|debugger|double|export|finally|goto|in|let|null|public|super|throw|try|volatile|arguments|byte|class|default|else|extends|float|implements|instanceof|long|package|return|switch|throws|typeof|while|await|case|const|delete|enum|false|for|if|int|native|private|short|sync|async|transient|var|with|boolean|catch|continue|do|eval|final|function|import|interface|new|protected|static|this|true|void|yeild|%3E|%27|%3C|%22|!|*|(|+|_|-|:|;)
- 
