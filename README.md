@@ -44,15 +44,19 @@ Day 38 - 28/12/2022| Integration Testing I
 Day 39 - 29/12/2022| Integration Testing II
 Day 40 - 30/12/2022| Recap (Unit and Integration Testing)
 Day 41 - 31/12/2022| Handling Errors III
+Day 42 - 01/01/2023| Semantic Versioning
 ___
 ## TDL
 
 - CSV to JSON.
 - MongoDB CLI.
-- `100 Days of Productivity`
-- Jest Mock Functions.
-- Unit and Integration Testing (Important!)
-- Include the credits when adding an external resource that belongs to someone.
+- `100 Days of Productivity` (Suggested Project)
+- .ENV
+- Core Node.js modules. ('fs', 'os', 'path', 'http', 'event')
+- JWT Auth
+- Semantic Versioning
+- Data Validation
+- Template Engines (pug)
 
 ___
 ## References

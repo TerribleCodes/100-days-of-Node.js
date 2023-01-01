@@ -1,8 +1,15 @@
+# Introduction
+
+* There are 2 types of errors.
+    * Programmer Error: Mistakes in the logic which can be edited in the source code. Ex: Syntax errors
+    * Operational Errors: When an operation has the potential to fail; expected and accounted errors.
+
 # Handling `Unhandled Promise Rejections`
 
 - By default 30 attmpts will be taken by the application in 1000ms intervals (30 seconds) before fails.
 - Happens when there's no connection between the database server.
 - Try-Catch blocks can be used to handle this error.
+
 ```javascript
 router.use('/', (req, res) => {
     try { const genre = await Genre.find().sort('name'); res.send(genre); }
@@ -13,12 +20,24 @@ router.use('/', (req, res) => {
 
 ## Error Middleware
 
-```javascript
-const error_handle = function(error, req, res, next){
-    res.status(500).send('Internal server error');
-  };
+- This approach keeps the routing kind of routes clean.
 
+```javascript
+// Error Handling Middleware
+const error_handle = (error, req, res, next) => {
+    res.status(500).send(error.message);
+  };
 module.exports = {error_handle};
+
+// In the routes module...
+app.get('/user', (req, res, next) => {
+    try{
+        if (!user) throw new Error('User does not exist');
+    }catch{ 
+        return next(error) 
+        }
+});
+app.use(error_handle);
 ```
 
 ## Avoiding multiple try-catch blocks
@@ -109,4 +128,3 @@ process.on('unhandledRejection', (ex) => {
         throw ex;
     });
 ```
-

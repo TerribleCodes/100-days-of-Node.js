@@ -37,7 +37,11 @@
 - `major version number` :  A new feature that effects the whole application. 5.0.0  
 - `minor version number` :  New features that doesn't effect the existing API. If there's no bug, `patch version number` will be 0. 4.6.0  
 - `patch version number` :  Small bug fixes. 4.5.8  
-- `^` or `~` character indicates that the package needs to be changed or not depending on the major and the minor versions. Ex: `"4.5.x"`  
+- The caret symbol `^` which is located before the Major version number tells npm how to handle the future updates.  
+- The tilde symbol `~` relates to the *patch* version updates. Not major or minor.  
+> "angular": "^1.3.15" in package.json tells npm that you want either 1.3.15 or a version that is greater than that but still _starts with 1 (it is in the same major range).
+- `package.json` records important metadata about the project.
+- `package-lock.json` avoids dependency conflicts. And allows future devs to install the same dependencies in the project.
 
 <hr>
 
