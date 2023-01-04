@@ -1,4 +1,6 @@
-const userModel = require('./models/user')
+const cookieParser = require('cookie-parser');
+const {createTokens, validateToken} = require('./jwt');
+const userModel = require('./models/user');
 const bcrypt = require('bcrypt');
 const mongoose = require('mongoose');
 const express = require('express');
@@ -7,6 +9,7 @@ const app = express();
 const PORT = 3000;
 
 app.use(express.json());
+app.use(cookieParser());
 
 mongoose.connect('mongodb://localhost:27017')
     .then(() => console.log('Successfully connected to the database...'))
@@ -26,29 +29,26 @@ app.post('/register', (req, res) => {
     });
 
 app.post('/login', async (req, res) => {
-
     const {username, password} = req.body; // Get the username and the password
-
     const user = await userModel.findOne({username: username}); // Find the user in the database using the username
-
     if(!user) res.status(400).json({error: 'User does not exist'}); // Checking whether user exists
-
     const dbPass = user.password; //Get the password from the database
-    // res.json(dbPass);
-
-    bcrypt.compare(password, dbPass).then((result) => {
-            if(!result){
-                res
-                    .status(400)
-                    .json({error: 'Wrong Password'})
-            }else{
-                res.json("Successfully Logged");
-            }
-        });
+    bcrypt.compare(password, dbPass).then((result) => { // Compares the sent password with the hashed value
+        if(!result){
+            res
+                .status(400)
+                .json({error: 'Wrong Password'})
+        }else{
+            const accessToken = createTokens(user);
+            res.json({accessToken});
+            // Cookie isn't working so just sent the token to the output
+            // res.cookie('access-token', accessToken, { maxAge: 900000, httpOnly: true });
+        }
+    });
 });
 
-app.get('/profile', (req, res) => {
-    res.json('profile');
+app.get('/profile', validateToken, (req, res) => {
+    res.json('done');
 });
 
 app.listen(PORT, () => {

@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.1.0",
+    "cookie-parser": "^1.4.6",
     "debug": "^4.3.4",
     "express": "^4.18.2",
     "joi": "^17.7.0",
