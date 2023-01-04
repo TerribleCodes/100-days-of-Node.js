@@ -47,7 +47,7 @@ Day 41 - 31/12/2022| Handling Errors III
 Day 42 - 01/01/2023| Semantic Versioning
 Day 43 - 02/01/2023| JWT Auth I
 Day 44 - 04/01/2023| MongoDB Schemas Recap
-Day 45 - 05/01/2023| 
+Day 45 - 05/01/2023| JWT Auth II
 
 ___
 ## TDL
