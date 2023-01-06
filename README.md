@@ -46,8 +46,10 @@ Day 40 - 30/12/2022| Recap (Unit and Integration Testing)
 Day 41 - 31/12/2022| Handling Errors III
 Day 42 - 01/01/2023| Semantic Versioning
 Day 43 - 02/01/2023| JWT Auth I
-Day 44 - 04/01/2023| MongoDB Schemas Recap
-Day 45 - 05/01/2023| JWT Auth II
+Day 44 - 03/01/2023| MongoDB Schemas Recap
+Day 45 - 04/01/2023| JWT Auth II
+`null` - 05/01/2023| `null`
+Day 46 - 06/01/2023| Core NodeJS Modules
 
 ___
 ## TDL
@@ -56,9 +58,6 @@ ___
 - MongoDB CLI.
 - `100 Days of Productivity` (Suggested Project)
 - .ENV
-- Core Node.js modules. ('fs', 'os', 'path', 'http', 'event')
-- JWT Auth
-- Semantic Versioning
 - Data Validation
 - Template Engines (pug)
 
