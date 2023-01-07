@@ -50,6 +50,7 @@ Day 44 - 03/01/2023| MongoDB Schemas Recap
 Day 45 - 04/01/2023| JWT Auth II
 `null` - 05/01/2023| `null`
 Day 46 - 06/01/2023| Core NodeJS Modules
+Day 47 - 07/01/2023| Request Validation and .ENV
 
 ___
 ## TDL
@@ -57,9 +58,6 @@ ___
 - CSV to JSON.
 - MongoDB CLI.
 - `100 Days of Productivity` (Suggested Project)
-- .ENV
-- Data Validation
-- Template Engines (pug)
 
 ___
 ## References
