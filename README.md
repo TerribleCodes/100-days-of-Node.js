@@ -51,6 +51,7 @@ Day 45 - 04/01/2023| JWT Auth II
 `null` - 05/01/2023| `null`
 Day 46 - 06/01/2023| Core NodeJS Modules
 Day 47 - 07/01/2023| Request Validation and .ENV
+Day 48 - 08/01/2023| Upload API
 
 ___
 ## TDL
