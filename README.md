@@ -53,6 +53,7 @@ Day 46 - 06/01/2023| Core NodeJS Modules
 Day 47 - 07/01/2023| Request Validation and .ENV
 Day 48 - 08/01/2023| File Upload and File Download API
 day 49 - 09/01/2023| Recap (ExpressJS)
+day 50 - 10/01/2023| Simple CRUD with MongoDB Atlas
 
 ___
 ## TDL
