@@ -55,7 +55,7 @@ Day 48 - 08/01/2023| File Upload and File Download API
 day 49 - 09/01/2023| Recap (ExpressJS)
 day 50 - 10/01/2023| Simple CRUD with MongoDB Atlas
 Day 51 - 11/01/2023| Backend Services using NodeJS, Express and MongoDB I
-Day 52 - 12/01/2023| Backend Services using NodeJS, Express and MongoDB I
+Day 52 - 12/01/2023| Backend Services using NodeJS, Express and MongoDB II
 
 ___
 ## TDL
