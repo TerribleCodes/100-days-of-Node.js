@@ -1,0 +1,105 @@
+# 1. Lexical Grammar
+
+* JavaScript Syntax kind of thing.
+* For the interpreter to understand the JavaScript, the string needs to be parsed to a structured repersentation which called as the Lexical Analysis. 
+* Then white spaces, line terminations and comments will be stripped.
+* Other than single line and block comments, there's another one called `Hashbang comments` which is used to set the env path in unix systems. (This hashbang comment is only valid at the absolute start of the script module).
+
+```javascript
+	#!/usr/bin/env node
+
+	console.log("Hello World");
+```
+* Strict mode makes it easier to write secure JS; makes the syntax errors to throw errors.
+* Decimal literals start with 0 followed by another decimal digit and if it's smaller than 8 it will be treated as a octal.
+
+```javascript
+	0888 //parsed as decimal
+	0777 ///parsed as octal
+```
+
+* Binary numbers --> 0b or 0B 
+
+```javascript
+	0b10000000000000000000000000000000 // 2147483648
+	0b01111111100000000000000000000000 // 2139095040 
+```
+
+* Octals --> 0o or 0O
+
+```javascript
+	0O755 // 493
+	0o644 // 420
+```
+
+* Hexadecimal --> 0x or 0X
+
+```javascript
+	0xFFFFFFFFFFFFFFFFF // 295147905179352830000
+	0XA                 // 10
+```
+
+* As a habit, always insert the semicolon ;;;
+
+
+# 2. Expressions
+
+* Primary expressions
+* Left-hand-side expressions...etc
+
+# 3. Data Types
+
+* JS is a dynamically typed language.
+> typeof(null) --> object  
+> typeof(undefined) --> undefined  
+> typeof(boolean) --> boolean  
+> typeof(number) --> number  
+> typeof(bigint) --> bigint  
+> typeof(string) --> string  
+> typeof(symbol) --> symbol  
+
+# 4. Classes
+
+```javascript
+	class Rectangle{
+		constructor(height, width){
+			this.height = height;
+			this.width = width;
+		}	
+	}
+```
+
+```javascript
+	const Rectangle = class {
+  		constructor(height, width) {
+    			this.#height = height; //Height is a private field
+   	 		this.width = width;
+  		}
+	};
+```
+
+# 5. Varibles
+
+* Variables are variables. (let, var, const)
+
+# 6. Functions
+
+# 7. This Operator
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
