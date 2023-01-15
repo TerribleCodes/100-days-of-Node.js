@@ -4,6 +4,16 @@
     * Programmer Error: Mistakes in the logic which can be edited in the source code. Ex: Syntax errors
     * Operational Errors: When an operation has the potential to fail; expected and accounted errors.
 
+## Error Object in Node.js
+
+* It's a built in object in Node.js runtime environment which gives you the data related to an error.
+* `error.stack` is a field in the Error Object that shows from where the error came from.
+Ex: 
+```javascript
+   const error = new Error('Error message);
+   console.log(error.stack);
+```
+
 # Handling `Unhandled Promise Rejections`
 
 - By default 30 attmpts will be taken by the application in 1000ms intervals (30 seconds) before fails.
