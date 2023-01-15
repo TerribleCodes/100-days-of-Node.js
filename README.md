@@ -58,6 +58,7 @@ Day 51 - 11/01/2023| Backend Services using NodeJS, Express and MongoDB I
 Day 52 - 12/01/2023| Backend Services using NodeJS, Express and MongoDB II
 Day 53 - 13/01/2023| Node Package Manager
 Day 54 - 14/01/2023| NodeJS Documentaiton
+Day 55 - 15/01/2023| Error Handling
 
 ___
 ## TDL
