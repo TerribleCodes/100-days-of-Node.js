@@ -1,11 +1,60 @@
 # Introduction
 
-- A database that stores data in JSON like objects.
-- Tables --> 'collections'
-- rows --> 'documents'
+- A database that stores data in JSON like objects callde BSON (Binary JSON) which can hold more data structures than regular JSON.
+- Documents (Row in Relational Databases) --> The basic unit in MongoDB.
+- Collection (Table in Relationla Databases) --> Grouping of documents.
+- Database --> A container for collections.
 - There's no relationship between documents.
 
+___
+
+### Document Model in MongoDB
+
+```javascript
+    {
+        "key": value,
+        "key": value,
+        "key": value
+    }
+```
+___
+
 ### Establishing the connection
+
+1. To the MongoDB Atlas
+    * There are 2 ways to connect to the MongoDB
+        * Standard format
+        * DNS seed format
+    * Connection String: `mongodb+srv://<username>:<password>@cluster0.agv2fll.mongodb.net/?retryWrites=true&w=majority`
+
+___
+
+### Using mongosh
+
+* Select connect with mongodb shell.
+* Copy the URL string and paste it in the terminal. (Make sure the mongosh has been installed).
+* Use the Database access tab to configure a user and use those credentials when logging with mongosh.
+* MongoDB shell (NodeJS REPL Environment) is capable of handling JavaScript expressions.
+
+### Using mongoDB compass
+
+* Select connect using mongoDB compass option in the connect category.
+* Connection string: `mongodb+srv://<username>:<password>@mdb-training-cluster.swnn5.mongodb.net/test`
+* Paste it inside the connection URI and establish the connection.
+
+### MongoDB Drivers
+
+* [Documentation](https://www.mongodb.com/docs/drivers/node/current/)
+
+### Common errors associated with Atlas Connection
+
+* Network Access Errors
+    * If the current IP doesn't have the authority to access data, go to Security-->Network Access and add the current IP.
+* User Authentication Errors
+
+___
+
+2. To the local MongoDB server
 
 ```javascript
 const mongoose = require('mongoose');
