@@ -64,7 +64,8 @@ Day 55 - 15/01/2023| Error Handling
 `null` - 18/01/2023| `null`
 Day 56 - 19/01/2023| Recap I
 Day 57 - 20/01/2023| Recap II
-Day 58 - 21/01/2023| MongoDB
+Day 58 - 21/01/2023| MongoDB I
+Day 59 - 22/01/2023| MongoDB II
 
 ___
 ## TDL
