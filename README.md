@@ -66,6 +66,7 @@ Day 56 - 19/01/2023| Recap I
 Day 57 - 20/01/2023| Recap II
 Day 58 - 21/01/2023| MongoDB I
 Day 59 - 22/01/2023| MongoDB II
+Day 60 - 23/01/2023| MongoDB III
 
 ___
 ## TDL

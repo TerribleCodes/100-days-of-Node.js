@@ -30,21 +30,26 @@
         ])
     ```
 
-## Finding documents in a mongoDB collection.
+## Finding documents in a mongoDB collection (findOne() and find()).
 
 * `db.collection.find()`
 * To find a specific document --> `db.<collectoin_name>.find({field: "value"})`. Similar to the $eq operator
-    * Example: `db.accounts.find( { account_id: 370583 } )`
+    ```javascript
+                db.accounts.find( { account_id: 370583 } )
+    ```
 
-* Using the $in operator ---> `db.<collection_name>.find({ field: { $in: [value1, value2, value3] } })`
-    * Example: `db.accounts.find( { account_id: { $in: [ 370583, 692278, 212024 ] } } )`
-
-## Finding the documents using the comparisson operator
+* To find data which contains user specified values --> `db.<collection_name>.find({ field: { $in: [value1, value2, value3] } })`
+    ```javascript
+    db.accounts.find( { account_id: { $in: [ 370583, 692278, 212024 ] } } )
+    ```
+## Finding the documents using the comparisson operator ($lt, $gt, $lte, $gte)
 
 * `$gt`, `$lt`, `$gte`, `$lte`
 * `db.<collection_name>.findOne({"<field.subfield1.subfield2>": {$gt: value}})`
-    * Example: `db.zips.findOne({"pop": {$gt: 19357}})`
-
+    * Example: 
+    ```javascript
+        db.zips.findOne({"pop": {$gt: 19357}})`
+    ```
 ## Quering on Array Elements in MongoDB
 
 * This doen't return scalar values; i.e. it only returns the elements which are in an array.
@@ -89,4 +94,44 @@ or to find multiple elements
 Example: 
 ```javascript
     db.planets.find({$and: [{orderFromSun: {$gte: 3}}, {hasRings: false}]})
+```
+
+## Replacing a document in MongoDB
+
+```javascript
+    db.collection.replaceOne(filter, replacement, options)
+```
+Example: 
+```javascript
+db.books.replaceOne(
+  {
+    _id: ObjectId("6282afeb441a74a98dbbec4e"),
+  },
+  {
+    title: "Data Science Fundamentals for Python and MongoDB",
+    isbn: "1484235967",
+    publishedDate: new Date("2018-5-10"),
+    thumbnailUrl:
+      "https://m.media-amazon.com/images/I/71opmUBc2wL._AC_UY218_.jpg",
+    authors: ["David Paper"],
+    categories: ["Data Science"],
+  }
+)
+```
+
+## Updating a document in MongoDB
+
+```javascript
+    db.collection.updateOne(
+        <filter>, 
+        <update>,
+        {options}
+    )
+```
+
+* Along with the `updateOne()` we use `$set` and `$push`. Here `$set` will add new fields or replaces values in the document. And `$push` will append the value to the array.
+
+Example: 
+```javascript
+db.podcasts.updateOne({_id: ObjectId("6282afeb441a74a98dbbec4e")}, {$set: {subscribers: 23523}})
 ```
