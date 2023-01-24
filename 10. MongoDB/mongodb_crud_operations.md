@@ -4,7 +4,7 @@
 
 * There are 2 methods to insert data into mongodb documents
     * When inserting the documents, the connection must be already established to the database.
-    * `insertOne()` --> `db.<collection_name>.insertOne()`
+    * `insertOne()` --> `db.<collection_name>.insertOne()`  
     Example: 
     ```javascript
         db.grades.insertOne({
@@ -14,7 +14,7 @@
             ]
         })
     ```
-    * `insertMany()` --> `db.<collection_name>.insertMany([<document1>, <document2>, <document3>])`
+    * `insertMany()` --> `db.<collection_name>.insertMany([<document1>, <document2>, <document3>])`  
     Example: 
     ```javascript
         db.grades.insertMany([
@@ -45,7 +45,7 @@
 ## Finding the documents using the comparisson operator ($lt, $gt, $lte, $gte)
 
 * `$gt`, `$lt`, `$gte`, `$lte`
-* `db.<collection_name>.findOne({"<field.subfield1.subfield2>": {$gt: value}})`
+* `db.<collection_name>.findOne({"<field.subfield1.subfield2>": {$gt: value}})`  
     * Example: 
     ```javascript
         db.zips.findOne({"pop": {$gt: 19357}})`
@@ -103,35 +103,83 @@ Example:
 ```
 Example: 
 ```javascript
-db.books.replaceOne(
-  {
-    _id: ObjectId("6282afeb441a74a98dbbec4e"),
-  },
-  {
-    title: "Data Science Fundamentals for Python and MongoDB",
-    isbn: "1484235967",
-    publishedDate: new Date("2018-5-10"),
-    thumbnailUrl:
-      "https://m.media-amazon.com/images/I/71opmUBc2wL._AC_UY218_.jpg",
-    authors: ["David Paper"],
-    categories: ["Data Science"],
-  }
-)
+    db.books.replaceOne(
+        {
+            _id: ObjectId("6282afeb441a74a98dbbec4e"),
+        },
+        {
+            title: "Data Science Fundamentals for Python and MongoDB",
+            isbn: "1484235967",
+            publishedDate: new Date("2018-5-10"),
+            thumbnailUrl:
+            "https://m.media-amazon.com/images/I/71opmUBc2wL._AC_UY218_.jpg",
+            authors: ["David Paper"],
+            categories: ["Data Science"],
+        }
+    )
 ```
 
 ## Updating a document in MongoDB
 
 ```javascript
     db.collection.updateOne(
-        <filter>, 
-        <update>,
+        <filter>, //contains the selection criteria for the update process
+        <update>, //update expression
         {options}
     )
 ```
 
+* `updateOne()` only works if the filter has a matching document in the collection. To create a document if there's no matching unit, use the option `{upsert: true}`
 * Along with the `updateOne()` we use `$set` and `$push`. Here `$set` will add new fields or replaces values in the document. And `$push` will append the value to the array.
 
 Example: 
 ```javascript
-db.podcasts.updateOne({_id: ObjectId("6282afeb441a74a98dbbec4e")}, {$set: {subscribers: 23523}})
+    //usage of $set
+    db.podcasts.updateOne(
+        {_id: ObjectId("6282afeb441a74a98dbbec4e")},
+        {$set: {subscribers: 23523}}
+        {upsert: true}
+        )
 ```
+
+```javascript
+    //usage of $push
+    db.podcasts.updateOne(
+        {_id: ObjectId("6282afeb441a74a98dbbec4e")},
+        {$push: {myArray: "value1", "value2"}}
+    )
+```
+
+* `findAndModify()` method can be used as an alternative for using the `findOne()` and `updateOne()`  
+Example: 
+```javascript
+    db.document.findOneModify({
+        query: {_id: ObjectId("6282afeb441a74a98dbbec4e")},
+        update: { $inc : {downloads: 1}}, // add the update query here
+        new: true // true means it returns the updated document
+    })
+```
+
+* Using the `updateMany()` (There are few drawbacks in this method)
+```javascript
+    db.books.updateMany(
+        { publishedDate: { $lt: new Date("2019-01-01") } }, // Filter item
+        { $set: { status: "LEGACY" } } // update
+    )
+```
+
+## Deleting a document
+
+* `deleteOne()`
+```javascript
+    db.collection.deleteOne({
+        {_id: ObjectId("6282afeb441a74a98dbbec4e")};
+    })
+```
+
+```javascript
+    db.podcasts.deleteMany({category: “crime”});
+```
+
+## Modifying Query Results
+
