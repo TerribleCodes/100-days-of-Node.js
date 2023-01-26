@@ -64,16 +64,17 @@ Day 55 - 15/01/2023| Error Handling
 `null` - 18/01/2023| `null`
 Day 56 - 19/01/2023| Recap I
 Day 57 - 20/01/2023| Recap II
-Day 58 - 21/01/2023| MongoDB I
-Day 59 - 22/01/2023| MongoDB II
-Day 60 - 23/01/2023| MongoDB III
-Day 61 - 24/01/2023| MongoDB IV
+Day 58 - 21/01/2023| MongoDB (Connecting to Atlas)
+Day 59 - 22/01/2023| MongoDB CRUD Operations I
+Day 60 - 23/01/2023| MongoDB CRUD Operations II
+Day 61 - 24/01/2023| MongoDB CRUD Operations III
+Day 62 - 25/01/2023| MongoDB CRUD Operations IV
+Day 63 - 26/02/2023| mongoDB CRUD Operations V
 
 ___
 ## TDL
 
 - CSV to JSON.
-- MongoDB CLI.
 - `100 Days of Productivity` (Suggested Project)
 - File Upload and download API (Re-Implement)
 

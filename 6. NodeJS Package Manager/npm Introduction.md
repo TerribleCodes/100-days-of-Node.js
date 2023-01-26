@@ -91,7 +91,7 @@
 - To Update the package: Update the minor by `npm version minor`  
 - Then `npm publish`  
 
-# Node Package Manager vs Node Package Execute
+### Node Package Manager vs Node Package Execute
 
 * npm is node package manager and npx is node package execute.
 * npm is used to manage the packages and npx is used to execute the packages.
@@ -101,10 +101,10 @@
 * To install locally, `npm install <package_name>`
 * To install globaly, `npm install -g <package_name>`
 
---save-dev ===> save to develeopment dependencies
---no-save ===> will not added to the package.json
---save-optional ===> save to optional dependencies
---no-optional ===> prevents optional dependencies being dwonloaded
+--save-dev ===> save to develeopment dependencies  
+--no-save ===> will not added to the package.json  
+--save-optional ===> save to optional dependencies  
+--no-optional ===> prevents optional dependencies being dwonloaded  
 
 ## Running Tasks
 
@@ -136,7 +136,6 @@
 * To check for outdated packages`npm outdated`
 * `npm update` will not update the major version. 
 * `npm install <module>@latest` will install the latest version.
-
 * `npm i -g npm-check-updates` --> Better update approach imo.
 * `ncu` --> To see the updates available
 * `ncu --upgrade` to update or `ncu --interactive` to enter the interactive mode.
