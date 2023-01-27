@@ -69,7 +69,8 @@ Day 59 - 22/01/2023| MongoDB CRUD Operations I
 Day 60 - 23/01/2023| MongoDB CRUD Operations II
 Day 61 - 24/01/2023| MongoDB CRUD Operations III
 Day 62 - 25/01/2023| MongoDB CRUD Operations IV
-Day 63 - 26/02/2023| mongoDB CRUD Operations V
+Day 63 - 26/01/2023| mongoDB CRUD Operations V
+Day 64 - 27/01/2023| mongoDB Aggregation
 
 ___
 ## TDL
