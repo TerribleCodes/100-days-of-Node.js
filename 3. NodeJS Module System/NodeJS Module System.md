@@ -1,17 +1,15 @@
+# Introduction
+
+* Every file in Node is considered as a module.
+* Basically there are 2 types of [NodeJS module systems.](./commonjs-vs-esm.png)
+    * CommonJS
+    * ESM
+
 - - - - - - - - - -
-### Basically there are 2 types of NodeJS module systems
 
-1. Commons JS
-2. ESM
-
-Refer [this Image](./commonjs-vs-esm.png)
-
-- - - - - - - - - -
-
-- Every file in node is considered as a module.
+### How Modules Work
 
 - Before Node execute a function it, wraps the module code into a `module wrapper function` which is an anonymous function (This happens at the Runtime).
-
 - After wrapping the code, (which happens before execution) wrapper function looke like this...
 
 ```javascript
@@ -21,6 +19,8 @@ Refer [this Image](./commonjs-vs-esm.png)
 ```
 
 - - - - - - - - - -
+
+### More about CommonJS and ESM
 
 * Node.js supports common.js by default.
 * ES module (ECMA Script) was introduced in Node.js v8.5.0 and starting from Node.js v13.2.0 it became stable with ES modules.
@@ -55,54 +55,27 @@ Example:
 
 - - - - - - - - - -
 
-*  Global methods
-    * `log()`
-    * `setTimeout()`
-    * `clearTimeout()`
-    * `setInterval()`
-    * `clearInterval()`
-
-- - - - - - - - - -
-
-### Callback Function --A short recap--
-
-```javascript
-    console.log("Executing in 1s");
-    setTimeout(() => {
-        console.log("Executing");
-    }, 5000);
-```
-
-```javascript
-    let names = ["a", "b", "c", "d", "e"];
-
-    names.forEach((value) => {
-        console.log(value);
-    });
-```
-
-- - - - - - - - - -
-
-## Creating your own module
+### Creating your own module
 
 ```javascript
     var url = 'http://mylogger.io/log';
-    var name = "Nothing Here";
+    var name = "John Doe";
 
     function log(message){
-        console.log(message,url)
+        console.log(message, url);
     }
     exports.functionName = log; // Exports the module content
-    exports.attributeName = name; // Exports the module content
+    exports.userName = name; // Exports the module content
 
-    /*module.exports = {url, name, log};*/ // Exporting can be done in this way as well
-    console.log(module); // Can view the module contents. Ex: `log` Export.
+    // To view the module content
+    console.log(module);
 ```
 
 ```javascript
     const logger = require('./logger.js'); // Import the required module content (locally available)
 
-    logger.log("This URL"); // console.log(logger.url)
+    logger.log("The message");
+    console.log(logger.url);
 ```
 
 * To export multiple module contents  
@@ -111,7 +84,9 @@ Example:
     module.exports = {method1, method2, method3};
 ```
 
-## File System Module
+## Core Modules in Node.JS
+
+### File System Module
 
 ```javascript
     const fs = require('fs');
@@ -126,7 +101,7 @@ Example:
     console.log(async_directory);
 ```
 
-## Path Module
+### Path Module
 
 ```javascript
     const path = require('path');
@@ -135,7 +110,7 @@ Example:
     console.log(pathObj);
 ```
 
-## OS Module
+### OS Module
 
 ```javascript
     const os = require('os');
@@ -147,11 +122,10 @@ Example:
     console.log(`Total Memory: ${totalMem}`);
 ```
 
-## Event Module
+### Event Module
 
 ```javascript
     const Logger = require('./logger'); // Import the Logger Class
-
     const logger = new Logger(); // Create an object
 
     logger.on('activete_emitter', (arg) => { // Register Emmiter
@@ -175,7 +149,7 @@ Example:
     exports.logger = Logger;
 ```
 
-## HTTP Module
+### HTTP Module
 
 ```javascript
     const http = require('http');

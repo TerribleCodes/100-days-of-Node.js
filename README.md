@@ -70,9 +70,12 @@ Day 60 - 23/01/2023| MongoDB CRUD Operations II
 Day 61 - 24/01/2023| MongoDB CRUD Operations III
 Day 62 - 25/01/2023| MongoDB CRUD Operations IV
 Day 63 - 26/01/2023| mongoDB CRUD Operations V
-Day 64 - 27/01/2023| mongoDB Aggregation
+Day 64 - 27/01/2023| mongoDB Aggregation I
+`null` - 28/01/2023| `null`
+Day 65 - 29/01/2023| NodeJS Recap
 
 ___
+
 ## TDL
 
 - CSV to JSON.
@@ -80,6 +83,7 @@ ___
 - File Upload and download API (Re-Implement)
 
 ___
+
 ## References
 
 1. [JavaScript Basics - BroCode](https://www.youtube.com/watch?v=8dWL3wF_OMw)  
