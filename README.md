@@ -73,6 +73,7 @@ Day 63 - 26/01/2023| mongoDB CRUD Operations V
 Day 64 - 27/01/2023| mongoDB Aggregation I
 `null` - 28/01/2023| `null`
 Day 65 - 29/01/2023| NodeJS Recap
+Day 66 - 30/01/2023| mongoDB Aggregation II
 
 ___
 
