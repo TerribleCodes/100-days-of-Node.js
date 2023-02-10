@@ -78,6 +78,17 @@
 | Day 67 - 30/01/2023 | mongoDB Aggregation III                               |
 | Day 68 - 31/01/2023 | mongoDB Indexes I                                     |
 | Day 68 - 31/01/2023 | mongoDB Indexes II                                    |
+| `null` - 18/02/2023 | `null`                                                |
+| `null` - 02/02/2023 | `null`                                                |
+| `null` - 03/02/2023 | `null`                                                |
+| `null` - 04/02/2023 | `null`                                                |
+| `null` - 05/02/2023 | `null`                                                |
+| `null` - 06/02/2023 | `null`                                                |
+| `null` - 07/02/2023 | `null`                                                |
+| `null` - 08/02/2023 | `null`                                                |
+| `null` - 09/02/2023 | `null`                                                |
+| `null` - 10/02/2023 | `null`                                                |
+| Day 69 - 11/02/2023 | MongoDB Indexes III                                   |
 
 ---
 
