@@ -88,7 +88,8 @@
 | `null` - 08/02/2023 | `null`                                                |
 | `null` - 09/02/2023 | `null`                                                |
 | `null` - 10/02/2023 | `null`                                                |
-| Day 69 - 11/02/2023 | MongoDB Indexes III and MongoDB Transactions          |
+| Day 69 - 11/02/2023 | MongoDB Transactions                                  |
+| Day 70 - 12/02/2023 | MongoDB Atlas with NodeJS                             |
 
 ---
 
