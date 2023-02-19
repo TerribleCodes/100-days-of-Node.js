@@ -80,7 +80,8 @@
 | Day 69 - 11/02/2023              | MongoDB Transactions                                  |
 | Day 70 - 12/02/2023              | MongoDB Atlas with NodeJS                             |
 | `null` - 28/01/2023 - 17/01/2023 | `null`                                                |
-| Day 71 - 18/02/2023              | NodeJS Recap                                          |
+| Day 71 - 18/02/2023              | NodeJS Recap I                                        |
+| Day 72 - 19/02/2023              | NodeJS Recap II                                       |
 
 ---
 
