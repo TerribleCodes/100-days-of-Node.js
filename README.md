@@ -83,7 +83,8 @@
 | Day 71 - 18/02/2023              | NodeJS Recap I                                        |
 | Day 72 - 19/02/2023              | NodeJS Recap II                                       |
 | `null` - 20/02/2023 - 23/02/2023 | `null`                                                |
-| Day 73 - 24/02/2023              | MongoDB and NodeJS Recap                              |
+| Day 73 - 24/02/2023              | MongoDB and NodeJS Recap I                            |
+| Day 74 - 25/02/2023              | MongoDB and NodeJS Recap I                            |
 
 ---
 
