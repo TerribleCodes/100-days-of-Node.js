@@ -170,3 +170,9 @@ const _ = require("underscore");
 
 > npm run chkupdates  
 > npm run deps
+
+## NPM Workspaces
+
+- In mono repos backend and the frontend are inside the same `packages` directory.
+- In multi repos the backend and the frontend are maintained in different repos.
+- [Multi Repo vs Mono Repo](./Mono%20vs%20Multi.png)

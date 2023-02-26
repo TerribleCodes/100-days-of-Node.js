@@ -85,6 +85,7 @@
 | `null` - 20/02/2023 - 23/02/2023 | `null`                                                |
 | Day 73 - 24/02/2023              | MongoDB and NodeJS Recap I                            |
 | Day 74 - 25/02/2023              | MongoDB and NodeJS Recap I                            |
+| Day 75 - 26/02/2023              | npm workspaces                                        |
 
 ---
 

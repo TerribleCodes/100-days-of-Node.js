@@ -1,0 +1,13 @@
+{
+  "name": "workspaces",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "workspaces": [
+    "./packages/frontend",
+    "./packages/backend"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
