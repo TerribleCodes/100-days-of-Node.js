@@ -86,6 +86,8 @@
 | Day 73 - 24/02/2023              | MongoDB and NodeJS Recap I                            |
 | Day 74 - 25/02/2023              | MongoDB and NodeJS Recap I                            |
 | Day 75 - 26/02/2023              | npm workspaces                                        |
+| `null` - 27/02/2023              | `null`                                                |
+| Day 76 - 28/02/2023              | Error Handling                                        |
 
 ---
 
