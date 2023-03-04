@@ -88,6 +88,10 @@
 | Day 75 - 26/02/2023              | npm workspaces                                        |
 | `null` - 27/02/2023              | `null`                                                |
 | Day 76 - 28/02/2023              | Error Handling                                        |
+| Day 77 - 01/03/2023              | Markdown Blog using Node/Mongo/Express and EJS I      |
+| Day 78 - 02/03/2023              | Markdown Blog using Node/Mongo/Express and EJS II     |
+| Day 80 - 03/03/2023              | Markdown Blog using Node/Mongo/Express and EJS III    |
+| Day 81 - 04/03/2023              | Markdown Blog using Node/Mongo/Express and EJS IV     |
 
 ---
 
