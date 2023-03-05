@@ -92,6 +92,7 @@
 | Day 78 - 02/03/2023              | Markdown Blog using Node/Mongo/Express and EJS II     |
 | Day 80 - 03/03/2023              | Markdown Blog using Node/Mongo/Express and EJS III    |
 | Day 81 - 04/03/2023              | Markdown Blog using Node/Mongo/Express and EJS IV     |
+| Day 82 - 05/03/2023              | Node-Express REST API                                 |
 
 ---
 
@@ -100,6 +101,7 @@
 - CSV to JSON.
 - `100 Days of Productivity` (Suggested Project)
 - File Upload and download API (Re-Implement)
+- REST API with Node-Express and `mongodb`. Not `mongoose`
 
 ---
 
