@@ -89,4 +89,5 @@
 | Day 80 - 03/03/2023              | Markdown Blog using Node/Mongo/Express and EJS III    |
 | Day 81 - 04/03/2023              | Markdown Blog using Node/Mongo/Express and EJS IV     |
 | Day 82 - 05/03/2023              | Node-Express REST API I                               |
-| Day 83 - 05/03/2023              | Node-Express REST API II                              |
+| Day 83 - 06/03/2023              | Node-Express REST API II                              |
+| Day 84 - 07/03/2023              | Node-Express-Mongo Backend I                          |
