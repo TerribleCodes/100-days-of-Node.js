@@ -10,7 +10,7 @@ Also [Node.js Roadmap](https://roadmap.sh/nodejs)
 
 ## References
 
-| Day                                   | What I did                                                                                                                                               |
+| Name                                  | Source                                                                                                                                                   |
 | ------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 1. JavaScript Basics                  | [JavaScript Full Course - BroCode](https://www.youtube.com/watch?v=8dWL3wF_OMw) , [JavaScript OOP Concepts](https://www.youtube.com/watch?v=GEuS0tfLfEY) |
 | 2. Introduction to NodeJS             | -                                                                                                                                                        |

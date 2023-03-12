@@ -26,6 +26,18 @@ const _ = require("underscore");
 - And `package.json` will handle the dependencies when it's required.
   Use `node install` or `node i` to install the missing dependencies.
 
+## `package.json` vs `package-lock.json`
+
+- Package.json is a versioning file that's used to install multiple dependencies on your project. It basically contains the meta data of the project.
+- Package-lock.json locks the dependency with the installed version.
+
+| package.json                                                                         | package-lock.json                                                                                               |
+| ------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------- |
+| It contains basic information about the project.                                     | It describes the exact tree that was generated to allow subsequent installs to have the identical tree.         |
+| It is mandatory for every project.                                                   | It is automatically generated for those operations where npm modifies either node_modules tree or package.json. |
+| It records important metadata about the project.                                     | It allows future devs to install the same dependencies in the project.                                          |
+| It contains information such as name, description, author, script, and dependencies. | It contains the name, dependencies, and locked version of the project.                                          |
+
 ## Semantic Versioning
 
 ```javascript
