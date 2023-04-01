@@ -1,3 +1,7 @@
+# TIMELINE
+
+> This table contains what I did/ what I covered in each day of #100_Days_of_NodeJS challenge.
+
 | Day                              | What I did                                               |
 | -------------------------------- | -------------------------------------------------------- |
 | Day 01 - 21/11/2022              | JavaScript Basics I                                      |
@@ -98,5 +102,13 @@
 | Day 88 - 20/03/2023              | Chat application with OpenAI API II                      |
 | Day 89 - 21/03/2023              | Chat application with OpenAI API III                     |
 | Day 90 - 22/03/2023              | Chat application with OpenAI API IV                      |
-| Day 91 - 22/03/2023              | Chat application with OpenAI API V                       |
-| Day 92 - 23/03/2023              | Chat application with OpenAI API V                       |
+| Day 91 - 23/03/2023              | NodeJS Recap Session I                                   |
+| Day 92 - 24/03/2023              | NodeJS Recap Session II                                  |
+| Day 93 - 25/03/2023              | NodeJS Recap Session IIIs                                |
+| Day 94 - 26/03/2023              | NodeJS Recap Session IV                                  |
+| Day 95 - 27/03/2023              | NodeJS Recap Session V                                   |
+| Day 96 - 28/03/2023              | Recipe-App Backend I                                     |
+| Day 97 - 29/03/2023              | Recipe-App Backend II                                    |
+| Day 98 - 30/03/2023              | Recipe-App Backend III                                   |
+| Day 99 - 31/03/2023              | Recipe-App Backend IV                                    |
+| Day 100 - 01/04/2023             | Recipe-App Backend V                                     |

@@ -1,10 +1,34 @@
+<h1 align="center">
+  👨‍💻 # 100_Days_of_NodeJS
+</h1>
+<p align="center">
+   Based on <a href="https://codewithmosh.com/p/the-complete-node-js-course">
+       The Complete Node.js Course by Mosh
+   </a>
+   and
+   <a href="https://roadmap.sh/nodejs">
+      The Node.js Roadmap
+   </a>
+</p>
+<p align="center">
 :octocat:
+</p>
 
-# 100 Days of Node.js
+---
 
-Based on [Complete Node.js course - Mosh](https://codewithmosh.com/p/the-complete-node-js-course)
+`This repository contains the notes that I took while doing the #100_Days_of_NodeJS challenge. Some notes were taken while doing Mosh's NodeJS course, and most of the other notes were taken from several resources from the internet (which are available for free) and are included below.`
 
-Also [Node.js Roadmap](https://roadmap.sh/nodejs)
+---
+
+Important 📌
+
+> _To be honest, you need around 14 days to learn the core NodeJS concepts. But to master NodeJS, it will take some time. You don't always have to tackle theory sections and tutorials. Once you understand the concept, work on backend projects. This will help you master NodeJS in no time._
+
+---
+
+Contribute 📝
+
+> Feel free to open a [Pull Request](https://github.com/TerribleCodes/100-days-of-Node.js/pulls) or an [issue](https://github.com/TerribleCodes/100-days-of-Node.js/issues) if there's any Issue or if you want to add content.
 
 ---
 
@@ -29,10 +53,3 @@ Also [Node.js Roadmap](https://roadmap.sh/nodejs)
 | Other                                 | [dotENV](https://www.youtube.com/watch?v=zDup0I2VGmk)                                                                                                    |
 
 ---
-
-## TDL
-
-- CSV to JSON.
-- `100 Days of Productivity` (Suggested Project)
-- File Upload and download API (Re-Implement)
-- REST API with Node-Express and `mongodb`. Not `mongoose`
