@@ -28,7 +28,7 @@ Important 📌
 
 Contribute 📝
 
-> Feel free to open a [Pull Request](https://github.com/TerribleCodes/100-days-of-Node.js/pulls) or an [issue](https://github.com/TerribleCodes/100-days-of-Node.js/issues) if there's any Issue or if you want to add content.
+> Feel free to open a [Pull Request](https://github.com/TerribleCodes/100-days-of-Node.js/pulls) or an [Issue](https://github.com/TerribleCodes/100-days-of-Node.js/issues) if there's an issue or if you want to add more content 😄
 
 ---
 
