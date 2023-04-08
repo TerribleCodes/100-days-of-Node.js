@@ -43,7 +43,7 @@ Contribute 📝
 | 5. NodeJS Package Manager             |  [npm](https://youtu.be/2V1UUhBJ62Y)                                                                                                                                                         |
 | 6. RESTful Services                   | [Rest API](https://youtu.be/pKd0Rpw7O48)                                                                                                                                                         |
 | 7. Express Advanced Topics            |                                                                                                                                                          |
-| 8. Async JavaScript                   |                                                                                                                                                          |
+| 8. Async JavaScript                   | [JavaScript Async Await](https://youtu.be/V_Kr9OSfDeU)                                                                                                                                                          |
 | 9. MongoDB                            |                                                                                                                                                          |
 | 10. Data Validation                   |                                                                                                                                                          |
 | 11. Modeling Relationships (mongoose) |                                                                                                                                                          |
