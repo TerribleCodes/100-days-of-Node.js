@@ -37,13 +37,13 @@ Contribute 📝
 | Name                                  | Source                                                                                                                                                   |
 | ------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 1. JavaScript Basics                  | [JavaScript Full Course - BroCode](https://www.youtube.com/watch?v=8dWL3wF_OMw) , [JavaScript OOP Concepts](https://www.youtube.com/watch?v=GEuS0tfLfEY) |
-| 2. Introduction to NodeJS             | -                                                                                                                                                        |
+| 2. Introduction to NodeJS             | [Beginner’s Guide](https://youtu.be/ENrzD9HAZK4)                                                                                                                                                     |
 | 3. NodeJS Module System               |                                                                                                                                                          |
 | 4. JSON Introduction                  | [JSON Tutorial](https://www.youtube.com/watch?v=IWcUJLUAO2A)                                                                                             |
-| 5. NodeJS Package Manager             |                                                                                                                                                          |
-| 6. RESTful Services                   |                                                                                                                                                          |
+| 5. NodeJS Package Manager             |  [npm](https://youtu.be/2V1UUhBJ62Y)                                                                                                                                                         |
+| 6. RESTful Services                   | [Rest API](https://youtu.be/pKd0Rpw7O48)                                                                                                                                                         |
 | 7. Express Advanced Topics            |                                                                                                                                                          |
-| 8. Async JavaScript                   |                                                                                                                                                          |
+| 8. Async JavaScript                   | [JavaScript Async Await](https://youtu.be/V_Kr9OSfDeU)                                                                                                                                                          |
 | 9. MongoDB                            |                                                                                                                                                          |
 | 10. Data Validation                   |                                                                                                                                                          |
 | 11. Modeling Relationships (mongoose) |                                                                                                                                                          |
